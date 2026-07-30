@@ -107,8 +107,8 @@ return(
 <div className="">
 
 
-<div className="flex items-center gap-3 border border-gray-300 w-[200px] lg:py-[5px] justify-center rounded-3xl font-semibold ">
-    <svg
+<div className="flex items-center gap-3 border border-gray-100 w-[200px] lg:py-[5px] justify-center rounded-3xl font-semibold ">
+    <svg className="text-white"
   width="8"
   height="8"
   viewBox="0 0 8 8"

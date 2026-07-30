@@ -28,7 +28,7 @@ function Section3(){
 
     </div>
 
-    <div className="flex justify-between flex-col lg:flex-row  mt-10">
+    <div className="flex gap-5 justify-between flex-col lg:flex-row  mt-10">
 
 <div className="lg:w-[450px] border border-gray-200 lg:px-[30px] px-[15px] rounded-2xl border border-gray-200 bg-white py-[30px]  transition-all duration-300 hover:border-teal-500 hover:shadow-lg">
         <div className="flex items-center justify-between">
