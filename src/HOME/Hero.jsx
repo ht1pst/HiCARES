@@ -103,11 +103,19 @@ return(
     backgroundRepeat: "no-repeat",
     minHeight: "90vh",
   }}
+
+  
+
 >
 <div className="">
 
 
-<div className="flex items-center gap-3 border border-gray-100 w-[200px] lg:py-[5px] justify-center rounded-3xl font-semibold ">
+<motion.div className="flex items-center gap-3 border border-gray-100 w-[200px] lg:py-[5px] justify-center rounded-3xl font-semibold "
+initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
     <svg className="text-white"
   width="8"
   height="8"
@@ -117,15 +125,60 @@ return(
   <circle cx="4" cy="4" r="4" />
 </svg>
     <p className="text-white">Quality Care at Home</p>
-</div>
+</motion.div>
 
-<h1 className="lg:text-[55px] text-[30px] font-bold lg:w-[600px] lg:leading-[60px] leading-[40px] mt-5 text-white">Bringing Compassionate Home Care to Individuals and Families Across Minnesota</h1>
-<p className="text-[16px] lg:w-[400px] font-semibold text-white mt-5">Providing personalized in-home care services that promote independence, dignity, safety, and peace of mind for individuals and families throughout Minnesota.</p>
+<motion.h1 className="lg:text-[55px] text-[30px] font-bold lg:w-[600px] lg:leading-[60px] leading-[40px] mt-5 text-white"
+initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{
+  duration: 0.8,
+  delay: 0.4,
+  ease: "easeOut", }}
+>Bringing Compassionate Home Care to Individuals and Families Across Minnesota</motion.h1>
+<motion.p className="text-[16px] lg:w-[400px] font-semibold text-white mt-5"
+initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{
+  duration: 0.8,
+  delay: 0.6,
+  ease: "easeOut", }}
+>Providing personalized in-home care services that promote independence, dignity, safety, and peace of mind for individuals and families throughout Minnesota.</motion.p>
 
 
 <div className="flex lg:flex-row flex-col lg:gap-2 gap-6 mt-5">
-    <button className="bg-[#1E3A5F] text-white lg:w-[180px] w-full h-[45px] rounded-xl font-bold mx-auto">Request Care</button>
-    <button className="bg-white text-#1E3A5F border border-[#1E3A5F] lg:w-[180px] w-full h-[40px] rounded-xl font-bold mx-auto">Refer a Client</button>
+    <motion.button className="bg-[#1E3A5F] text-white lg:w-[180px] w-full h-[45px] rounded-xl font-bold mx-auto"
+    initial={{ opacity: 0, y: 40, rotate: 0 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true, amount: 0.3 }}
+  transition={{
+    duration: 0.8,
+    delay: 1,
+    ease: "easeOut",
+  }}
+  animate={{
+    rotate: [0, -4, 4, -4, 4, 0],
+  }}
+  style={{ transformOrigin: "center center" }}
+    >Request Care</motion.button>
+
+
+    <motion.button className="bg-white text-#1E3A5F border border-[#1E3A5F] lg:w-[180px] w-full h-[40px] rounded-xl font-bold mx-auto"
+     initial={{ opacity: 0, y: 40, rotate: 0 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true, amount: 0.3 }}
+  transition={{
+    duration: 0.8,
+    delay: 1.5,
+    ease: "easeOut",
+  }}
+  animate={{
+    rotate: [0, -4, 4, -4, 4, 0],
+  }}
+  style={{ transformOrigin: "center center" }}
+
+    >Refer a Client</motion.button>
 </div>
 </div>
 
