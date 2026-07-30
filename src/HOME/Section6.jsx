@@ -2,7 +2,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
-
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import img1 from "../assets/team-img1.jpg";
 import img2 from "../assets/team-img2.jpg";
 import img3 from "../assets/team-img3.jpg";
@@ -56,9 +57,21 @@ function Section6() {
   return (
     <section className="bg-[#F8FAFC] py-24 pt-20 h-auto pb-10 px-[20px]">
 
-        <h1 className="lg:text-[50px] text-[30px] font-semibold  text-center lg:text-start flex lg:justify-center justify-start">What Investors Say About Us</h1>
-        <p className="lg:text-[18px] text-[15px] font-bold text-gray-500 lg:w-160 text-center pt-2 mx-auto">Investors praise our transparent approach, personalized guidance, and
-  user-friendly platform. At HiCARES, their trust is our greatest endorsement.</p>
+        <motion.h1 className="lg:text-[50px] text-[30px] font-semibold  text-center lg:text-start flex lg:justify-center justify-start"
+        initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+        >What Investors Say About Us</motion.h1>
+
+
+        <motion.p className="lg:text-[18px] text-[15px] font-bold text-gray-500 lg:w-160 text-center pt-2 mx-auto"
+        initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+        >Investors praise our transparent approach, personalized guidance, and
+  user-friendly platform. At HiCARES, their trust is our greatest endorsement.</motion.p>
       <Swiper
         modules={[Pagination, Autoplay]}
         pagination={{ clickable: true }}
@@ -80,7 +93,12 @@ function Section6() {
       >
         {cards.map((card, i) => (
           <SwiperSlide key={i}>
-            <div className="relative mx-auto mt-16 flex h-[420px] flex-col justify-center rounded-3xl border border-gray-200 bg-white px-8 py-10 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <motion.div className="relative mx-auto mt-16 flex h-[420px] flex-col justify-center rounded-3xl border border-gray-200 bg-white px-8 py-10 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+            initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+            >
 
               {/* Floating Image */}
               <div className="absolute left-1/2 top-[-40px] -translate-x-1/2">
@@ -115,7 +133,7 @@ function Section6() {
               <p className="mt-1 text-sm font-medium text-[#2EC4B6]">
                 {card.title}
               </p>
-            </div>
+            </motion.div>
           </SwiperSlide>
         ))}
       </Swiper>

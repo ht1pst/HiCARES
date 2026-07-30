@@ -1,6 +1,7 @@
 import img from "../assets/faqimg.jpg";
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+
+import { motion, AnimatePresence } from "framer-motion";
 const cardFadeUp = {
   hidden: { opacity: 0, y: 50 },
   visible: (i = 1) => ({
@@ -61,7 +62,12 @@ function Section7(){
 <div className="max-w-xl mx-auto lg:mx-0 space-y-4">
     <div>
 
-<div className="flex items-center gap-3 border border-gray-300 w-[80px] py-[5px] justify-center rounded-3xl font-semibold ">
+<motion.div className="flex items-center gap-3 border border-gray-300 w-[80px] py-[5px] justify-center rounded-3xl font-semibold "
+initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
     <svg
   width="8"
   height="8"
@@ -71,7 +77,7 @@ function Section7(){
   <circle cx="4" cy="4" r="4" />
 </svg>
     <p className="text-gray-700 text-[13px]">FAQ's</p>
-</div>
+</motion.div>
 
 
         <motion.h1 className="lg:text-[46px] text-[30px] font-semibold"
