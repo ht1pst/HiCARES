@@ -41,7 +41,7 @@ function Section4(){
 
 <div className="flex flex-col lg:flex-row justify-center gap-5 mt-20">
 
-<div className="flex flex-col px-[20px] rounded-xl py-[30px] justify-center bg-[#DFF7F2] w-[320px]">
+<div className="flex flex-col px-[20px] rounded-xl py-[30px] justify-center bg-[#DFF7F2] w-[320px] mx-auto">
 
     <div className="mx-auto border border-gray-400 rounded-full p-4">
         <img src={clockk} alt="" className="w-10" />
@@ -53,7 +53,7 @@ function Section4(){
 </div>
 
 
-<div className="flex flex-col px-[20px] rounded-xl py-[30px] justify-center bg-[#FFF4D6] w-[320px]">
+<div className="flex flex-col px-[20px] rounded-xl py-[30px] justify-center bg-[#FFF4D6] w-[320px] mx-auto">
 
     <div className="mx-auto border border-gray-400 rounded-full p-4">
         <img src={customer} alt="" className="w-10" />
@@ -65,7 +65,7 @@ function Section4(){
 </div>
 
 
-<div className="flex flex-col px-[20px] rounded-xl py-[30px] justify-center bg-[#FFE8DE] w-[320px]">
+<div className="flex flex-col px-[20px] rounded-xl py-[30px] justify-center bg-[#FFE8DE] w-[320px] mx-auto">
 
     <div className="mx-auto border border-gray-400 rounded-full p-4">
         <img src={doctor} alt="" className="w-10" />
@@ -77,7 +77,7 @@ function Section4(){
 </div>
 
 
-<div className="flex flex-col px-[20px] rounded-xl py-[30px] justify-center bg-[#F2E8FF] w-[320px]">
+<div className="flex flex-col px-[20px] rounded-xl py-[30px] justify-center bg-[#F2E8FF] w-[320px] mx-auto">
 
     <div className="mx-auto border border-gray-400 rounded-full p-4">
         <img src={hour} alt="" className="w-10" />
