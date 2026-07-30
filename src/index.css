@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+/* 👇 Custom Font Setup */
+@font-face {
+  font-family: "Turnkey";
+  src: url("/src/assets/fonts/Turnkey-Light.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply globally */
+* {
+  font-family: "Turnkey", sans-serif;
+}
