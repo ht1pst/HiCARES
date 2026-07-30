@@ -37,15 +37,23 @@ function Section8() {
 
           <div className="gap-3 flex flex-col lg:flex-row mt-7">
             <motion.button className="bg-[#2EC4B6] text-[#1E3A5F] w-[180px] h-[45px] rounded-full font-bold hover:bg-white transition"
-                initial={{ opacity: 0, y: 40, rotate: 0 }}
-  whileInView={{ opacity: 1, y: 0 }}
+               initial={{ opacity: 0, y: 40 }}
+  whileInView={{
+    opacity: 1,
+    y: 0,
+    rotate: [0, -4, 4, -4, 4, 0],
+  }}
   viewport={{ once: true, amount: 0.3 }}
   transition={{
-    duration: 0.8,
-    ease: "easeOut",
-  }}
-  animate={{
-    rotate: [0, -4, 4, -4, 4, 0],
+    opacity: { duration: 0.8 },
+    y: { duration: 0.8, ease: "easeOut" },
+    rotate: {
+      delay: 0.8,
+      duration: 0.5,
+      repeat: Infinity,
+      repeatDelay: 2,
+      ease: "easeInOut",
+    },
   }}
   style={{ transformOrigin: "center center" }}
             >

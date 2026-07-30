@@ -35,15 +35,23 @@ function Section3(){
 
  <div className="mt-5 lg:mt-0">
        <motion.button className="bg-[#1E3A5F] text-white w-[190px] h-[50px] rounded-xl font-bold"
-        initial={{ opacity: 0, y: 40, rotate: 0 }}
-  whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 40 }}
+  whileInView={{
+    opacity: 1,
+    y: 0,
+    rotate: [0, -4, 4, -4, 4, 0],
+  }}
   viewport={{ once: true, amount: 0.3 }}
   transition={{
-    delay: 1,
-    ease: "easeOut",
-  }}
-  animate={{
-    rotate: [0, -4, 4, -4, 4, 0],
+    opacity: { duration: 0.8 },
+    y: { duration: 0.8, ease: "easeOut" },
+    rotate: {
+      delay: 0.8,
+      duration: 0.5,
+      repeat: Infinity,
+      repeatDelay: 2,
+      ease: "easeInOut",
+    },
   }}
   style={{ transformOrigin: "center center" }}
        >View All Service</motion.button>

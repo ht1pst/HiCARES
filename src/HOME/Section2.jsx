@@ -177,19 +177,30 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
 </div>
 
             <motion.div className="mt-5 flex">
-       <motion.button className="bg-[#1E3A5F] text-white w-[120px] h-[40px] rounded-xl font-bold"
-        initial={{ opacity: 0, y: 40, rotate: 0 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true, amount: 0.3 }}
-  transition={{
-    duration: 0.8,
-    ease: "easeOut",
-  }}
-  animate={{
+       <motion.button
+  className="bg-[#1E3A5F] text-white w-[120px] h-[40px] rounded-xl font-bold"
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{
+    opacity: 1,
+    y: 0,
     rotate: [0, -4, 4, -4, 4, 0],
   }}
+  viewport={{ once: true, amount: 0.3 }}
+  transition={{
+    opacity: { duration: 0.8 },
+    y: { duration: 0.8, ease: "easeOut" },
+    rotate: {
+      delay: 0.8,
+      duration: 0.5,
+      repeat: Infinity,
+      repeatDelay: 2,
+      ease: "easeInOut",
+    },
+  }}
   style={{ transformOrigin: "center center" }}
-       >About Us</motion.button>
+>
+  About Us
+</motion.button>
     </motion.div>
 
 <motion.div className="flex items-center gap-6 mt-5"

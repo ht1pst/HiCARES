@@ -1,4 +1,6 @@
 import img from "../assets/ctaimg.jpg";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 function Section82(){
 
     return(
@@ -7,17 +9,74 @@ function Section82(){
 <div className="flex justify-center gap-20 h-auto pb-10 pt-20">
 
 <div>
-<h1 className="text-[48px] leading-[65px] font-bold w-[600px]">Compassionate Care That Feels Like Family</h1>
-<p className="text-[16px] w-[500px] font-bold text-gray-500">Receive personalized in-home care from experienced professionals dedicated to helping you or your loved one live safely, comfortably, and independently.</p>
+<motion.h1 className="text-[48px] leading-[65px] font-bold w-[600px]"
+initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>Compassionate Care That Feels Like Family</motion.h1>
+<motion.p className="text-[16px] w-[500px] font-bold text-gray-500"
+initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>Receive personalized in-home care from experienced professionals dedicated to helping you or your loved one live safely, comfortably, and independently.</motion.p>
 
 <div className="gap-3 flex mt-7">
- <button className="bg-[#1E3A5F] text-white w-[180px] h-[40px] rounded-full font-bold">Request Care</button>
- <button className="border border-[#7fe7db] text-[#7fe7db] w-[180px] h-[40px] rounded-full font-bold">Contact</button>
+ <motion.button className="bg-[#1E3A5F] text-white w-[180px] h-[40px] rounded-full font-bold"
+   initial={{ opacity: 0, y: 40 }}
+  whileInView={{
+    opacity: 1,
+    y: 0,
+    rotate: [0, -4, 4, -4, 4, 0],
+  }}
+  viewport={{ once: true, amount: 0.3 }}
+  transition={{
+    opacity: { duration: 0.8 },
+    y: { duration: 0.8, ease: "easeOut" },
+    rotate: {
+      delay: 0.8,
+      duration: 0.5,
+      repeat: Infinity,
+      repeatDelay: 2,
+      ease: "easeInOut",
+    },
+  }}
+  style={{ transformOrigin: "center center" }}
+ >Request Care</motion.button>
+
+
+ <motion.button className="border border-[#7fe7db] text-[#7fe7db] w-[180px] h-[40px] rounded-full font-bold"
+   initial={{ opacity: 0, y: 40 }}
+  whileInView={{
+    opacity: 1,
+    y: 0,
+    rotate: [0, -4, 4, -4, 4, 0],
+  }}
+  viewport={{ once: true, amount: 0.3 }}
+  transition={{
+    opacity: { duration: 0.8 },
+    y: { duration: 0.8, ease: "easeOut" },
+    rotate: {
+      delay: 0.8,
+      duration: 0.5,
+      repeat: Infinity,
+      repeatDelay: 2,
+      ease: "easeInOut",
+    },
+  }}
+  style={{ transformOrigin: "center center" }}
+ >Contact</motion.button>
 </div>
 
 <div className="flex gap-5 mt-10">
 
-<div className="flex flex-col items-center">
+<motion.div className="flex flex-col items-center"
+initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
   <div className="bg-[#DFF7F2] w-[60px] h-[60px] rounded-full flex items-center justify-center">
     <svg
       className="w-[40px]"
@@ -44,9 +103,14 @@ function Section82(){
     Personalized <br />
     Care Plans
   </p>
-</div>
+</motion.div>
 
-<div className="flex flex-col items-center">
+<motion.div className="flex flex-col items-center"
+initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
   <div className="bg-[#DFF7F2] w-[60px] h-[60px] rounded-full flex items-center justify-center">
     <svg className="w-[40px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
   <circle cx="22" cy="18" r="6" fill="#0F2D52"/>
@@ -67,9 +131,14 @@ function Section82(){
     Compassionate <br />
     Caregivers
   </p>
-</div>
+</motion.div>
 
-<div className="flex flex-col items-center">
+<motion.div className="flex flex-col items-center"
+initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
   <div className="bg-[#DFF7F2] w-[60px] h-[60px] rounded-full flex items-center justify-center">
    <svg className="w-[40px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
   <path d="M32 10L48 16V30C48 41 40 49 32 54C24 49 16 41 16 30V16L32 10Z"
@@ -86,9 +155,14 @@ function Section82(){
     Trusted &  <br />
     Reliable
   </p>
-</div>
+</motion.div>
 
-<div className="flex flex-col items-center">
+<motion.div className="flex flex-col items-center"
+initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
   <div className="bg-[#DFF7F2] w-[60px] h-[60px] rounded-full flex items-center justify-center">
    <svg className="w-[40px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
   <circle cx="20" cy="20" r="5" fill="#0F2D52"/>
@@ -118,16 +192,21 @@ function Section82(){
     Family-Focused<br />
     Support
   </p>
-</div>
+</motion.div>
 
 </div>
 
 </div>
 
 
-<div>
+<motion.div
+initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
     <img src={img} alt=""  className="object-cover w-[600px] rounded-xl border border-5 border-gray-200"/>
-</div>
+</motion.div>
 
 </div>
 
