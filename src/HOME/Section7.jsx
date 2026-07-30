@@ -110,7 +110,7 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
                   onClick={() => toggleFAQ(index)}
                   className="w-full flex justify-between items-center  py-1 bg-white transition"
                 >
-                  <span className=" text-[18px] lg:font-bold text-start  ">
+                  <span className=" text-[18px] lg:font-bold text-start font-bold ">
                     {faq.question}
                   </span>
                   <span className="transition-all duration-300 text-2xl font-bold text-[#1E3A5F]">
