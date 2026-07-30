@@ -102,7 +102,7 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}     // slide up into view
   viewport={{ once: true, amount: 0.3 }} // animate only the first time
   transition={{ duration: 0.8, ease: "easeOut" }}
-                className=" border border-gray-300 p-2 rounded-xl bg-white   w-80 lg:w-140 overflow-hidden transition-all duration-300"
+                className=" border border-gray-300 p-2 rounded-xl bg-white mx-auto lg:mx-0   w-80 lg:w-140 overflow-hidden transition-all duration-300"
               >
             
                 {/* Questions */}
