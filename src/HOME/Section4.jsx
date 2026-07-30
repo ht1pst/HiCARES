@@ -51,7 +51,6 @@ function Section4(){
   viewport={{ once: true, amount: 0.3 }}
   transition={{
     duration: 0.8,
-    delay: 1,
     ease: "easeOut",
   }}
   animate={{

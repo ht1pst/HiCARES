@@ -102,7 +102,7 @@ Family & Provider Collaboration
 
  <div className="mt-7 lg:mt-5">
        <motion.button className="bg-[#1E3A5F] text-white w-[140px] h-[50px] rounded-xl font-bold"
-          initial={{ opacity: 0, y: 40, rotate: 0 }}
+           initial={{ opacity: 0, y: 40, rotate: 0 }}
   whileInView={{ opacity: 1, y: 0 }}
   viewport={{ once: true, amount: 0.3 }}
   transition={{
