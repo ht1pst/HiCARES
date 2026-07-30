@@ -7,8 +7,8 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 function Section2() {
   return (
-    <section className="h-auto pb-10 pt-20 px-[20px]">
-      <div className="flex flex-col lg:flex-row relative justify-center lg:items-center lg:gap-25 gap-10">
+    <section className="h-auto pb-10 lg:pt-20 px-[20px]">
+      <div className="flex flex-col flex-col-reverse lg:flex-row relative justify-center lg:items-center lg:gap-25 gap-10">
         <div className="lg:w-150 relative">
 <div className="bg-[#F5F9FA] lg:block hidden lg:w-[280px] px-5 lg:py-10 py-4 rounded-xl absolute bottom-[-50px] right-[-20px] overflow-hidden">
     <div className="flex items-center justify-between">

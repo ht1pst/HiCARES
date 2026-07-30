@@ -148,7 +148,7 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
 
 
 <div className="flex lg:flex-row flex-col lg:gap-2 gap-6 mt-5">
-    <motion.button className="bg-[#1E3A5F] text-white lg:w-[180px] w-full h-[45px] rounded-xl font-bold mx-auto"
+    <motion.button className="bg-[#1E3A5F] text-white lg:w-[180px] w-full h-[45px] rounded-xl font-bold lg:mx-0 mx-auto"
     initial={{ opacity: 0, y: 40, rotate: 0 }}
   whileInView={{ opacity: 1, y: 0 }}
   viewport={{ once: true, amount: 0.3 }}
@@ -164,7 +164,7 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
     >Request Care</motion.button>
 
 
-    <motion.button className="bg-white text-#1E3A5F border border-[#1E3A5F] lg:w-[180px] w-full h-[40px] rounded-xl font-bold mx-auto"
+    <motion.button className="bg-white text-#1E3A5F border border-[#1E3A5F] lg:w-[180px] w-full h-[40px] rounded-xl font-bold lg:mx-0mx-auto"
      initial={{ opacity: 0, y: 40, rotate: 0 }}
   whileInView={{ opacity: 1, y: 0 }}
   viewport={{ once: true, amount: 0.3 }}

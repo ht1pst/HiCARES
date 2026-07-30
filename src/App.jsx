@@ -9,6 +9,7 @@ import Section5 from "./HOME/Section5";
 import Section6 from "./HOME/Section6";
 import Section7 from "./HOME/Section7";
 import Section8 from "./HOME/Section8";
+import Section82 from "./HOME/Section82";
 import Footer from "./HOME/Footer";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -39,6 +40,7 @@ function App() {
       <Section5 />
       <Section6 />
       <Section8 />
+      <Section82 />
       <Section7 />
       <Footer />
     </main>

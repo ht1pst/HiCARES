@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 function Section8() {
   return (
     <section
-      className="relative py-20 bg-cover bg-center bg-no-repeat px-[20px]"
+      className="relative lg:hidden block py-20 bg-cover bg-center bg-no-repeat px-[20px]"
       style={{
         backgroundImage: `url(${img})`,
       }}
