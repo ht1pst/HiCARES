@@ -11,7 +11,7 @@ import img3 from "../assets/team-img3.jpg";
 function Section6() {
   const cards = [
     {
-      baseImg: img1,
+      baseImg: img2,
       description:
         "HiCARES provided exceptional care and support for my family. Their caregivers were compassionate, professional, and always treated us with kindness.",
       name: "Sarah Mitchell",
@@ -25,14 +25,14 @@ function Section6() {
       title: "Client",
     },
     {
-      baseImg: img3,
+      baseImg: img2,
       description:
         "From the very first visit, HiCARES exceeded our expectations. Their caregivers treated my mother with dignity and respect every day.",
       name: "Linda Carter",
       title: "Family Member",
     },
     {
-      baseImg: img1,
+      baseImg: img2,
       description:
         "HiCARES provided exceptional care and support for my family. Their caregivers were compassionate, professional, and always treated us with kindness.",
       name: "Sarah Mitchell",
@@ -46,7 +46,7 @@ function Section6() {
       title: "Client",
     },
     {
-      baseImg: img3,
+      baseImg: img2,
       description:
         "From the very first visit, HiCARES exceeded our expectations. Their caregivers treated my mother with dignity and respect every day.",
       name: "Linda Carter",
@@ -65,7 +65,7 @@ function Section6() {
         >What Investors Say About Us</motion.h1>
 
 
-        <motion.p className="lg:text-[18px] text-[15px] font-bold text-gray-500 lg:w-160 text-center pt-2 mx-auto"
+        <motion.p className="lg:text-[18px] text-[15px]  text-gray-500 lg:w-160 text-center pt-2 mx-auto"
         initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
   viewport={{ once: true, amount: 0.3 }} // animate only the first time

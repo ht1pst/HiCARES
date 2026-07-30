@@ -1,18 +1,39 @@
-import logo from "../assets/HiCARES LOGO.jpeg";
+import logo from "../assets/logonew.png";
 import heroimg from "../assets/hero-img1.png";
 import img from "../assets/heroimg2.jpg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 function Hero(){
     const [open, setOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
+useEffect(() => {
+  const handleScroll = () => {
+    setScrolled(window.scrollY > 20);
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
 return(
 <section className="h-auto pb-10 ">
     <div>
         
-<header className="flex items-center justify-between py-4 px-6 lg:px-20 relative z-50 bg-white">
+<header  className={`
+    fixed top-0 left-0 w-full z-50
+    flex items-center justify-between
+    py-4 px-6 lg:px-20
+    transition-all duration-300
+    ${
+      scrolled
+        ? "bg-white/80 backdrop-blur-md shadow-md"
+        : "bg-white"
+    }
+  `}>
 
       {/* Logo */}
-      <img src={logo} alt="HiCARES Logo" className="w-[100px] lg:w-[120px]" />
+      <img src={logo} alt="HiCARES Logo" className="w-[150px] lg:w-[120px]" />
 
       {/* Desktop Menu */}
       <nav className="hidden lg:flex gap-10 text-[17px] font-semibold">
@@ -136,7 +157,11 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   delay: 0.4,
   ease: "easeOut", }}
 >Bringing Compassionate Home Care to Individuals and Families Across Minnesota</motion.h1>
-<motion.p className="text-[16px] lg:w-[400px] font-semibold text-white mt-5"
+<motion.p className="text-[16px] lg:w-[400px]  text-white mt-5 font-thin"
+ style={{
+    fontWeight: 500,
+  }}
+
 initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
   viewport={{ once: true, amount: 0.3 }} // animate only the first time

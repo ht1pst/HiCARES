@@ -37,7 +37,7 @@ function Section4(){
 >Experience Compassionate Care at Home</motion.h1>
 
 
-<motion.p className="text-[16px] lg:w-[500px] font-bold text-gray-500 mt-5 lg:mt-0"
+<motion.p className="text-[16px] lg:w-[500px]  text-gray-500 mt-5 lg:mt-0"
  initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
   viewport={{ once: true, amount: 0.3 }} // animate only the first time
@@ -85,7 +85,7 @@ function Section4(){
 
 <div className="flex flex-col lg:flex-row justify-center gap-5 mt-20">
 
-<motion.div className="flex flex-col px-[20px] rounded-xl py-[30px] justify-center bg-[#DFF7F2] w-[320px] mx-auto"
+<motion.div className="flex flex-col px-[20px] rounded-xl py-[30px] justify-center bg-[#DFF7F2] lg:w-[320px] mx-auto"
  initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
   viewport={{ once: true, amount: 0.3 }} // animate only the first time
@@ -102,7 +102,7 @@ function Section4(){
 </motion.div>
 
 
-<motion.div className="flex flex-col px-[20px] rounded-xl py-[30px] justify-center bg-[#FFF4D6] w-[320px] mx-auto"
+<motion.div className="flex flex-col px-[20px] rounded-xl py-[30px] justify-center bg-[#FFF4D6] lg:w-[320px] mx-auto"
  initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
   viewport={{ once: true, amount: 0.3 }} // animate only the first time
@@ -119,7 +119,7 @@ function Section4(){
 </motion.div>
 
 
-<motion.div className="flex flex-col px-[20px] rounded-xl py-[30px] justify-center bg-[#FFE8DE] w-[320px] mx-auto"
+<motion.div className="flex flex-col px-[20px] rounded-xl py-[30px] justify-center bg-[#FFE8DE] lg:w-[320px] mx-auto"
  initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
   viewport={{ once: true, amount: 0.3 }} // animate only the first time
@@ -136,7 +136,7 @@ function Section4(){
 </motion.div>
 
 
-<motion.div className="flex flex-col px-[20px] rounded-xl py-[30px] justify-center bg-[#F2E8FF] w-[320px] mx-auto"
+<motion.div className="flex flex-col px-[20px] rounded-xl py-[30px] justify-center bg-[#F2E8FF] lg:w-[320px] mx-auto"
  initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
   viewport={{ once: true, amount: 0.3 }} // animate only the first time

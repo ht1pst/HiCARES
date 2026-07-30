@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 function Section8() {
   return (
     <section
-      className="relative lg:hidden block py-20 bg-cover bg-center bg-no-repeat px-[20px]"
+      className="relative lg:hidden block lg:py-20 py-10 bg-cover bg-center bg-no-repeat px-[20px]"
       style={{
         backgroundImage: `url(${img})`,
       }}
@@ -17,7 +17,25 @@ function Section8() {
       <div className="relative z-10 flex justify-center gap-20 h-auto">
 
         <div>
-          <motion.h1 className="lg:text-[48px] text-[30px] leading-[40px] lg:leading-[65px] font-bold lg:w-[600px] text-white"
+
+<motion.div className="flex items-center gap-3 border border-gray-100 w-[200px] lg:py-[5px] justify-center rounded-3xl font-semibold "
+initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
+    <svg className="text-white"
+  width="8"
+  height="8"
+  viewBox="0 0 8 8"
+  fill="currentColor"
+>
+  <circle cx="4" cy="4" r="4" />
+</svg>
+    <p className="text-white">Quality Care at Home</p>
+</motion.div>
+
+          <motion.h1 className="lg:text-[48px] mt-5 lg:mt-0 text-[30px] leading-[40px] lg:leading-[65px] font-bold lg:w-[600px] text-white"
           initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
   viewport={{ once: true, amount: 0.3 }} // animate only the first time
@@ -26,7 +44,7 @@ function Section8() {
             Compassionate Care That Feels Like Family
           </motion.h1>
 
-          <motion.p className="text-[16px] lg:w-[500px] font-bold text-gray-200 mt-4"
+          <motion.p className="text-[16px] lg:w-[500px]  text-gray-200 mt-4"
           initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
   viewport={{ once: true, amount: 0.3 }} // animate only the first time

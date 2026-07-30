@@ -6,8 +6,8 @@ return(
     <section className="relative px-[20px]">
 
 
-        <div className="absolute hidden lg:block top-90 left-0 w-30 h-80 bg-[#aefdec] #aefdec rounded-full blur-[120px] opacity-70"></div>
-      <div className="absolute hidden lg:block top-0 right-0 w-40 h-80 bg-[#f3b499] #f3b499 rounded-full blur-[120px] opacity-70"></div>
+        <div className="absolute  block top-90 left-0 w-30 h-80 bg-[#aefdec] #aefdec rounded-full blur-[120px] opacity-70"></div>
+      <div className="absolute block top-0 right-0 w-40 h-80 bg-[#f3b499] #f3b499 rounded-full blur-[120px] opacity-70"></div>
 
         <div className="flex flex-col lg:flex-row justify-center lg:gap-20 gap-10 items-center h-auto pb-10 pt-20">
 <motion.div
@@ -19,7 +19,7 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   <img
     src={img}
     alt=""
-    className="w-[600px] rounded-4xl border border-5 border-gray-200 "
+    className="lg:w-[600px] rounded-xl border border-5 border-gray-200 z-30 relative "
   />
 </motion.div>
 
@@ -49,7 +49,7 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   transition={{ duration: 0.8, ease: "easeOut" }}
 >Care Designed Around Your Unique Needs</motion.h1>
 
-<motion.p className="text-[16px] lg:w-[500px] font-bold text-gray-500"
+<motion.p className="text-[16px] lg:w-[500px]  text-gray-500"
 initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
   viewport={{ once: true, amount: 0.3 }} // animate only the first time

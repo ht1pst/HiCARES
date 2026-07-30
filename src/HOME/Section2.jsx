@@ -16,25 +16,25 @@ function Section2() {
     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="20px" fill="#ffffff"><path d="M339.5-108.5q-65.5-28.5-114-77t-77-114Q120-365 120-440t28.5-140.5q28.5-65.5 77-114t114-77Q405-800 480-800t140.5 28.5q65.5 28.5 114 77t77 114Q840-515 840-440t-28.5 140.5q-28.5 65.5-77 114t-114 77Q555-80 480-80t-140.5-28.5ZM480-440Zm112 168 56-56-128-128v-184h-80v216l152 152ZM224-866l56 56-170 170-56-56 170-170Zm512 0 170 170-56 56-170-170 56-56ZM480-160q117 0 198.5-81.5T760-440q0-117-81.5-198.5T480-720q-117 0-198.5 81.5T200-440q0 117 81.5 198.5T480-160Z"/></svg>
 </div>
 
-<h1 className="lg:text-[24px] text-[16px] font-bold">Schedule Hours</h1>
+<h1 className="lg:text-[24px] text-[16px] ">Schedule Hours</h1>
     </div>
 
 
      <div className="flex lg:justify-between gap-3 lg:mt-5 mt-2">
-        <h1 className="lg:text-[18px] font-bold">Mon - Fri</h1>
-        <p  className="lg:text-[18px] font-bold">09:00 -06:00</p>
+        <h1 className="lg:text-[18px] ">Mon - Fri</h1>
+        <p  className="lg:text-[18px] ">09:00 -06:00</p>
      </div>
 
 
        <div className="flex lg:justify-between gap-3 lg:mt-5 mt-2">
-        <h1 className="lg:text-[18px] font-bold">Saturday</h1>
-        <p  className="lg:text-[18px] font-bold">09:00 -06:00</p>
+        <h1 className="lg:text-[18px] ">Saturday</h1>
+        <p  className="lg:text-[18px] ">09:00 -06:00</p>
      </div>
 
 
        <div className="flex lg:justify-between gap-10 lg:mt-5 mt-2">
-        <h1 className="lg:text-[18px] font-bold">Sunday</h1>
-        <p  className="lg:text-[18px] font-bold">Off Day</p>
+        <h1 className="lg:text-[18px] ">Sunday</h1>
+        <p  className="lg:text-[18px] ">Off Day</p>
      </div>
 
 
@@ -60,25 +60,25 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="20px" fill="#ffffff"><path d="M339.5-108.5q-65.5-28.5-114-77t-77-114Q120-365 120-440t28.5-140.5q28.5-65.5 77-114t114-77Q405-800 480-800t140.5 28.5q65.5 28.5 114 77t77 114Q840-515 840-440t-28.5 140.5q-28.5 65.5-77 114t-114 77Q555-80 480-80t-140.5-28.5ZM480-440Zm112 168 56-56-128-128v-184h-80v216l152 152ZM224-866l56 56-170 170-56-56 170-170Zm512 0 170 170-56 56-170-170 56-56ZM480-160q117 0 198.5-81.5T760-440q0-117-81.5-198.5T480-720q-117 0-198.5 81.5T200-440q0 117 81.5 198.5T480-160Z"/></svg>
 </div>
 
-<h1 className="text-[24px]  font-bold">Schedule Hours</h1>
+<h1 className="text-[24px]  ">Schedule Hours</h1>
     </div>
 
 
      <div className="flex justify-between  mt-5">
-        <h1 className="text-[18px] font-bold">Mon - Fri</h1>
-        <p  className="text-[18px] font-bold">09:00 -06:00</p>
+        <h1 className="text-[18px] ">Mon - Fri</h1>
+        <p  className="text-[18px] ">09:00 -06:00</p>
      </div>
 
 
        <div className="flex justify-between  mt-5">
-        <h1 className="text-[18px] font-bold">Saturday</h1>
-        <p  className="text-[18px] font-bold">09:00 -06:00</p>
+        <h1 className="text-[18px] ">Saturday</h1>
+        <p  className="text-[18px] ">09:00 -06:00</p>
      </div>
 
 
        <div className="flex justify-between  mt-5">
-        <h1 className="text-[18px] font-bold">Sunday</h1>
-        <p  className="text-[18px] font-bold">Off Day</p>
+        <h1 className="text-[18px] ">Sunday</h1>
+        <p  className="text-[18px] ">Off Day</p>
      </div>
 
 
@@ -86,7 +86,7 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
 
         <div className="">
             <div>
-             <motion.div className="flex items-center gap-3 border border-gray-300 w-[220px] py-[5px] justify-center rounded-3xl font-semibold "
+             <motion.div className="flex items-center gap-3 border border-gray-300 w-[220px] py-[5px] justify-center rounded-3xl  "
              initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
   viewport={{ once: true, amount: 0.3 }} // animate only the first time
@@ -104,7 +104,7 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
 </motion.div>
            
            </div>
-           <motion.h1 className="lg:text-[60px] text-[33px] font-bold lg:w-[650px] lg:leading-[70px] leading-[40px] mt-5"
+           <motion.h1 className="lg:text-[60px] font-bold text-[33px]  lg:w-[650px] lg:leading-[70px] leading-[40px] mt-5"
            initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
   viewport={{ once: true, amount: 0.3 }} // animate only the first time
@@ -112,7 +112,7 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
            >Compassionate Home Care You Can Trust</motion.h1>
 
 
-           <motion.p className="text-[16px] lg:w-[700px] font-semibold text-gray-600 mt-5"
+           <motion.p className="text-[16px] lg:w-[700px]  text-gray-600 mt-5"
            initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
   viewport={{ once: true, amount: 0.3 }} // animate only the first time
@@ -130,13 +130,13 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
     </motion.div>
 
     <div className="leading-[30px]">
-        <motion.h1 className="text-[25px] font-bold"
+        <motion.h1 className="text-[25px] font-bold "
         initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
   viewport={{ once: true, amount: 0.3 }} // animate only the first time
   transition={{ duration: 0.8, ease: "easeOut" }}
         >Compassionate Home Care</motion.h1>
-        <motion.p className="text-[16px] font-semibold text-gray-600"
+        <motion.p className="text-[16px]  text-gray-600"
         initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
   viewport={{ once: true, amount: 0.3 }} // animate only the first time
@@ -159,13 +159,13 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
     </motion.div>
 
     <div className="leading-[30px]">
-        <motion.h1 className="text-[25px] font-bold"
+        <motion.h1 className="text-[25px] font-bold "
         initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
   viewport={{ once: true, amount: 0.3 }} // animate only the first time
   transition={{ duration: 0.8, ease: "easeOut" }}
         >Skilled Caregivers</motion.h1>
-        <motion.p className="text-[16px] font-semibold text-gray-600"
+        <motion.p className="text-[16px]  text-gray-600"
         initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
   viewport={{ once: true, amount: 0.3 }} // animate only the first time
@@ -178,7 +178,7 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
 
             <motion.div className="mt-5 flex">
        <motion.button
-  className="bg-[#1E3A5F] text-white w-[120px] h-[40px] rounded-xl font-bold"
+  className="bg-[#1E3A5F] text-white w-[120px] h-[40px] rounded-xl "
   initial={{ opacity: 0, y: 40 }}
   whileInView={{
     opacity: 1,
@@ -211,7 +211,7 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
 >
 <img src={img4} alt=""className="rounded-full w-13 h-13" />
 <div>
-    <h1 className="text-[17px] font-bold">Janmie Ash</h1>
+    <h1 className="text-[17px] ">Janmie Ash</h1>
     <p className="text-[12px] text-gray-500">Managing Director</p>
 </div>
 <div>
