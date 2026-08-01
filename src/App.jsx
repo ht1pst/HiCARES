@@ -3,16 +3,16 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Lenis from "lenis";
 
-import Hero from "./Home/Hero";
-import Section2 from "./Home/Section2";
-import Section3 from "./Home/Section3";
-import Section4 from "./Home/Section4";
-import Section5 from "./Home/Section5";
-import Section6 from "./Home/Section6";
-import Section7 from "./Home/Section7";
-import Section8 from "./Home/Section8";
-import Section82 from "./Home/Section82";
-import Footer from "./Home/Footer";
+import Hero from "./HOME/Hero";
+import Section2 from "./HOME/Section2";
+import Section3 from "./HOME/Section3";
+import Section4 from "./HOME/Section4";
+import Section5 from "./HOME/Section5";
+import Section6 from "./HOME/Section6";
+import Section7 from "./HOME/Section7";
+import Section8 from "./HOME/Section8";
+import Section82 from "./HOME/Section82";
+import Footer from "./HOME/Footer";
 
 import AboutSec1 from "./About/AboutSec1";
 import AboutSec2 from "./About/AboutSec2";
