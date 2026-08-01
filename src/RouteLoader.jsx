@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Lenis from "lenis";
 
 import ScrollToTop from "./ScrollToTop";
@@ -22,9 +22,7 @@ import AboutSec3 from "./About/AboutSec3";
 import AboutSec4 from "./About/AboutSec4";
 import AboutSec5 from "./About/AboutSec5";
 
-import "@fortawesome/fontawesome-free/css/all.min.css";
-
-function AppContent() {
+function RouteLoader() {
   const location = useLocation();
   const [loading, setLoading] = useState(true);
 
@@ -45,7 +43,7 @@ function AppContent() {
     return () => lenis.destroy();
   }, []);
 
-  // Splash screen on every page change
+  // Splash on every route change
   useEffect(() => {
     setLoading(true);
 
@@ -105,12 +103,4 @@ function AppContent() {
   );
 }
 
-function App() {
-  return (
-    <Router>
-      <AppContent />
-    </Router>
-  );
-}
-
-export default App;
+export default RouteLoader;
