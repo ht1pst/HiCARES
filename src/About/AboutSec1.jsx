@@ -41,11 +41,11 @@ useEffect(() => {
             {/* Desktop Menu */}
             <nav className="hidden lg:flex gap-10 text-[17px] font-semibold">
               <Link to="/">Home</Link>
-              <Link to="/About">About</Link>
-              <Link to="/Services">Services</Link>
-              <Link to="/Why">Why Choose Us</Link>
-              <Link to="/Referral">Referral</Link>
-              <Link to="/Contact">Contact Us</Link>
+              <Link to="/about">About</Link>
+              <Link to="/services">Services</Link>
+              <Link to="/why">Why Choose Us</Link>
+              <Link to="/referral">Referral</Link>
+              <Link to="/contact">Contact Us</Link>
             </nav>
       
             {/* Desktop Button */}
@@ -98,11 +98,14 @@ useEffect(() => {
                     </div>
       
                     <nav className="flex flex-col gap-6 text-lg font-semibold">
-                      <Link to="/" onClick={() => setOpen(false)}>Home</Link>
-                       <Link to="/Services" onClick={() => setOpen(false)}>Services</Link>
-                      <Link to="/Why" onClick={() => setOpen(false)}>Why Choose Us</Link>
-                      <Link to="/Referral" onClick={() => setOpen(false)}>Referral</Link>
-                       <Link to="/Contact" onClick={() => setOpen(false)}>Contact Us</Link>
+                     
+      
+                       <Link to="/" onClick={() => setOpen(false)}>Home</Link>
+              <Link to="/about" onClick={() => setOpen(false)}>About</Link>
+              <Link to="/services" onClick={() => setOpen(false)}>Services</Link>
+              <Link to="/why" onClick={() => setOpen(false)}>Why Choose Us</Link>
+              <Link to="/referral" onClick={() => setOpen(false)}>Referral</Link>
+              <Link to="/contact" onClick={() => setOpen(false)}>Contact Us</Link>
                     </nav>
       
                     <button className="mt-10 w-full bg-[#1E3A5F] text-white py-3 rounded-xl font-semibold hover:bg-[#2EC4B6] transition">

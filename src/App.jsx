@@ -67,12 +67,30 @@ function App() {
               <>
                 <Hero />
                 <Section2 />
-               
+                <Section3 />
+                <Section4 />
+                <Section5 />
+                <Section6 />
+                <Section8 />
+                <Section82 />
+                <Section7 />
+                <Footer />
               </>
             }
           />
 
-          
+          <Route
+            path="/about"
+            element={
+              <>
+                <AboutSec1 />
+                <AboutSec2 />
+                <AboutSec3 />
+                <AboutSec4 />
+                <Footer />
+              </>
+            }
+          />
         </Routes>
       </main>
     </Router>
