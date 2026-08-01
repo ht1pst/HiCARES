@@ -18,6 +18,8 @@ import AboutSec1 from "./About/AboutSec1";
 import AboutSec2 from "./About/AboutSec2";
 import AboutSec3 from "./About/AboutSec3";
 import AboutSec4 from "./About/AboutSec4";
+import AboutSec5 from "./About/AboutSec5";
+
 
 import SplashScreen from "./SplashScreen";
 
@@ -87,6 +89,9 @@ function App() {
                 <AboutSec2 />
                 <AboutSec3 />
                 <AboutSec4 />
+                <AboutSec5 />
+                 <Section8 />
+                <Section82 />
                 <Footer />
               </>
             }

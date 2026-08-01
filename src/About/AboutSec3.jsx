@@ -19,7 +19,7 @@ useEffect(() => {
 }, []);
 
 return(
-    <section className="bg-[#F5F9FA] pt-10 h-auto pb-10">
+    <section className="bg-[#F5F9FA] pt-10 h-auto pb-10 px-[20px]">
 
 <header  className={`
     fixed top-0 left-0 w-full z-50
@@ -114,16 +114,27 @@ return(
     </header>
 
         <div className="hidden">
-            <h1 className="text-[48px] font-bold flex justify-center"> WHO WE ARE </h1>
-            <p className="text-gray-500 text-[25px] w-[550px] text-center flex mx-auto">Compassionate, Personalized Home Care for You and Your Loved Ones </p>
+            <motion.h1 className="text-[48px] font-bold flex justify-center"
+              initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+            > WHO WE ARE </motion.h1>
+
+            <motion.p className="text-gray-500 text-[25px] w-[550px] text-center flex mx-auto"
+             initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+            >Compassionate, Personalized Home Care for You and Your Loved Ones </motion.p>
         </div>
 
-        <div className="flex justify-center gap-40 items-center">
+        <div className="flex flex-col lg:flex-row justify-center lg:gap-40 gap-10 items-center">
 
 <div>
 
 <div className="relative">
-   <div className="absolute left-[-370px] top-1/2 -translate-y-1/2">
+   <div className="absolute left-[-370px] top-1/2 -translate-y-1/2 hidden lg:block">
   <h2 className="whitespace-nowrap text-[68px] font-bold text-gray-200 rotate-[-90deg] ">
     Personalized Care
   </h2>
@@ -145,17 +156,37 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
     <p className="text-black">Quality Care at Home</p>
 </motion.div>
 
-     <h1 className="text-[38px] font-bold "> WHO WE ARE </h1>
-    <p className="font-[16px] text-gray-500 w-[520px]">HiCARES LLC is a Minnesota licensed Comprehensive Home Care agency dedicated to providing compassionate, dependable, and personalized in-home care services. Our mission is to help individuals remain safe, comfortable, and independent while receiving high-quality care in the comfort of their own homes.</p>
+     <motion.h1 className="text-[38px] font-bold mt-4 "
+      initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+     > WHO WE ARE </motion.h1>
+    <motion.p className="font-[16px] text-gray-500 lg:w-[520px]"
+     initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+    >HiCARES LLC is a Minnesota licensed Comprehensive Home Care agency dedicated to providing compassionate, dependable, and personalized in-home care services. Our mission is to help individuals remain safe, comfortable, and independent while receiving high-quality care in the comfort of their own homes.</motion.p>
 
-    <p className="font-[16px] text-gray-500 w-[520px] mt-4">We believe every individual deserves to be treated with dignity, respect, compassion, and professionalism. Our experienced caregivers work closely with clients, families, physicians, hospitals, and case managers to develop individualized care plans that support each client’s health, independence, and quality of life.</p>
+    <motion.p className="font-[16px] text-gray-500 lg:w-[520px] mt-4"
+     initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+    >We believe every individual deserves to be treated with dignity, respect, compassion, and professionalism. Our experienced caregivers work closely with clients, families, physicians, hospitals, and case managers to develop individualized care plans that support each client’s health, independence, and quality of life.</motion.p>
 
-    <p className="font-[16px] text-gray-500 w-[520px] mt-4">Whether a client requires temporary assistance following an illness or surgery, or ongoing support with daily living activities, HiCARES LLC is committed to delivering exceptional care with integrity and excellence.
-</p>
+    <motion.p className="font-[16px] text-gray-500 lg:w-[520px] mt-4"
+     initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+    >Whether a client requires temporary assistance following an illness or surgery, or ongoing support with daily living activities, HiCARES LLC is committed to delivering exceptional care with integrity and excellence.
+</motion.p>
 </div>
 </div>
 <div>
-    <img src={img} alt="" className="object-cover h-[600px] w-[500px] rounded-xl" />
+    <img src={img} alt="" className="object-cover lg:h-[600px] h-[400px] w-[500px] rounded-xl" />
 </div>
 
         </div>

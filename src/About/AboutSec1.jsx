@@ -122,14 +122,29 @@ useEffect(() => {
 <div className="absolute w-[320px] h-[320px] rounded-full bg-[rgba(14,12,10,0.03)] left-[-200px]"></div>
 <div className="absolute w-[320px] h-[320px] rounded-full bg-[rgba(14,12,10,0.03)] left-[-200px] top-40"></div>
 
-    <h1 className="text-[48px] font-bold text-black flex justify-center ">About us</h1>
+    <motion.h1 className="text-[48px] font-bold text-black flex justify-center "
+     initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+    >About us</motion.h1>
 
-    <div className="flex gap-2 border border-gray-200 flex relative justify-center w-45 mx-auto rounded-full mt-5">
+    <motion.div className="flex gap-2 border border-gray-200 flex relative justify-center w-45 mx-auto rounded-full mt-5"
+     initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+    >
         
-        <p className="text-[16px]">Home</p>
+        <p className="text-[16px]"
+         initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+        >Home</p>
         <p className="text-[16px] text-[#4F6BD6]">//</p>
         <p className="text-[16px] text-[#4F6BD6]">About Us</p>
-    </div>
+    </motion.div>
 </div>
 
        </section>
