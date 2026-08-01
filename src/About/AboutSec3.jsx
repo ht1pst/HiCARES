@@ -1,11 +1,11 @@
 import logo from "../assets/logonew.png";
 import heroimg from "../assets/hero-img1.png";
-import img from "../assets/heroimg2.jpg";
-import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-function Hero(){
-    const [open, setOpen] = useState(false);
+import img from "../assets/aboutsec3img.jpg";
+function AboutSec3(){
+const [open, setOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
 useEffect(() => {
@@ -17,14 +17,14 @@ useEffect(() => {
 
   return () => window.removeEventListener("scroll", handleScroll);
 }, []);
+
 return(
-<section className="h-auto pb-10 ">
-    <div>
-        
+    <section className="bg-[#F5F9FA] pt-10 h-auto pb-10">
+
 <header  className={`
     fixed top-0 left-0 w-full z-50
     flex items-center justify-between
-    py-2 px-6 lg:px-20
+    py-4 px-6 lg:px-20
     transition-all duration-300
     ${
       scrolled
@@ -113,32 +113,28 @@ return(
       </AnimatePresence>
     </header>
 
-    </div>
+        <div className="hidden">
+            <h1 className="text-[48px] font-bold flex justify-center"> WHO WE ARE </h1>
+            <p className="text-gray-500 text-[25px] w-[550px] text-center flex mx-auto">Compassionate, Personalized Home Care for You and Your Loved Ones </p>
+        </div>
 
+        <div className="flex justify-center gap-40 items-center">
 
-  <div
-  className="relative flex lg:px-[50px] lg:items-center pt-[100px] bg-cover bg-center bg-no-repeat px-[20px]"
-  style={{
-    backgroundImage: `linear-gradient(rgba(30, 58, 95, 0.7), rgba(30, 58, 95, 0.7)), url(${img})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    minHeight: "90vh",
-  }}
+<div>
 
-  
-
->
-<div className="pt-10">
-
-
-<motion.div className="flex items-center gap-3 border border-gray-100 w-[200px] lg:py-[5px] justify-center rounded-3xl font-semibold "
+<div className="relative">
+   <div className="absolute left-[-370px] top-1/2 -translate-y-1/2">
+  <h2 className="whitespace-nowrap text-[68px] font-bold text-gray-200 rotate-[-90deg] ">
+    Personalized Care
+  </h2>
+</div>
+<motion.div className="flex items-center gap-3 border border-gray-300 w-[200px] lg:py-[5px] justify-center rounded-3xl font-semibold "
 initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
   viewport={{ once: true, amount: 0.3 }} // animate only the first time
   transition={{ duration: 0.8, ease: "easeOut" }}
 >
-    <svg className="text-white"
+    <svg className="text-black"
   width="8"
   height="8"
   viewBox="0 0 8 8"
@@ -146,81 +142,26 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
 >
   <circle cx="4" cy="4" r="4" />
 </svg>
-    <p className="text-white">Quality Care at Home</p>
+    <p className="text-black">Quality Care at Home</p>
 </motion.div>
 
-<motion.h1 className="lg:text-[55px] text-[30px] font-bold lg:w-[600px] lg:leading-[60px] leading-[40px] mt-5 text-white"
-initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
-  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
-  viewport={{ once: true, amount: 0.3 }} // animate only the first time
-  transition={{
-  duration: 0.8,
-  delay: 0.4,
-  ease: "easeOut", }}
->Bringing Compassionate Home Care to Individuals and Families Across Minnesota</motion.h1>
-<motion.p className="text-[16px] lg:w-[400px]  text-white mt-5 font-thin"
- style={{
-    fontWeight: 500,
-  }}
+     <h1 className="text-[38px] font-bold "> WHO WE ARE </h1>
+    <p className="font-[16px] text-gray-500 w-[520px]">HiCARES LLC is a Minnesota licensed Comprehensive Home Care agency dedicated to providing compassionate, dependable, and personalized in-home care services. Our mission is to help individuals remain safe, comfortable, and independent while receiving high-quality care in the comfort of their own homes.</p>
 
-initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
-  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
-  viewport={{ once: true, amount: 0.3 }} // animate only the first time
-  transition={{
-  duration: 0.8,
-  delay: 0.6,
-  ease: "easeOut", }}
->Providing personalized in-home care services that promote independence, dignity, safety, and peace of mind for individuals and families throughout Minnesota.</motion.p>
+    <p className="font-[16px] text-gray-500 w-[520px] mt-4">We believe every individual deserves to be treated with dignity, respect, compassion, and professionalism. Our experienced caregivers work closely with clients, families, physicians, hospitals, and case managers to develop individualized care plans that support each client’s health, independence, and quality of life.</p>
 
-
-<div className="flex lg:flex-row flex-col lg:gap-2 gap-6 mt-5">
-    <motion.button className="bg-[#1E3A5F] text-white lg:w-[180px] w-full h-[45px] rounded-xl font-bold lg:mx-0 mx-auto"
-    initial={{ opacity: 0, y: 40, rotate: 0 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true, amount: 0.3 }}
-  transition={{
-    duration: 0.8,
-    delay: 1,
-    ease: "easeOut",
-  }}
-  animate={{
-    rotate: [0, -4, 4, -4, 4, 0],
-  }}
-  style={{ transformOrigin: "center center" }}
-    >Request Care</motion.button>
-
-
-    <motion.button className="bg-white text-#1E3A5F border border-[#1E3A5F] lg:w-[180px] w-full h-[40px] rounded-xl font-bold lg:mx-0mx-auto"
-     initial={{ opacity: 0, y: 40, rotate: 0 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true, amount: 0.3 }}
-  transition={{
-    duration: 0.8,
-    delay: 1.5,
-    ease: "easeOut",
-  }}
-  animate={{
-    rotate: [0, -4, 4, -4, 4, 0],
-  }}
-  style={{ transformOrigin: "center center" }}
-
-    >Refer a Client</motion.button>
+    <p className="font-[16px] text-gray-500 w-[520px] mt-4">Whether a client requires temporary assistance following an illness or surgery, or ongoing support with daily living activities, HiCARES LLC is committed to delivering exceptional care with integrity and excellence.
+</p>
 </div>
 </div>
-
-
-
-
-<div className="relative">
-
-
-
-
+<div>
+    <img src={img} alt="" className="object-cover h-[600px] w-[500px] rounded-xl" />
 </div>
-    </div>
-</section>
 
+        </div>
+    </section>
 )
+
 }
 
-export default Hero;
+export default AboutSec3

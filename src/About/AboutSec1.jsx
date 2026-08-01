@@ -4,8 +4,8 @@ import img from "../assets/heroimg2.jpg";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-function Hero(){
-    const [open, setOpen] = useState(false);
+function AboutSec1(){
+const [open, setOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
 useEffect(() => {
@@ -17,14 +17,16 @@ useEffect(() => {
 
   return () => window.removeEventListener("scroll", handleScroll);
 }, []);
-return(
-<section className="h-auto pb-10 ">
-    <div>
-        
-<header  className={`
+
+    return(
+       <section className="overflow-hidden">
+
+
+
+        <header  className={`
     fixed top-0 left-0 w-full z-50
     flex items-center justify-between
-    py-2 px-6 lg:px-20
+    py-4 px-6 lg:px-20
     transition-all duration-300
     ${
       scrolled
@@ -113,114 +115,23 @@ return(
       </AnimatePresence>
     </header>
 
+<div className="pt-80 bg-[#F5F9FA] h-auto pb-40 items-center relative"  >
+    <div className="absolute top-[-200px] right-[-300px]  block w-[650px] h-[650px] rounded-full border-[85px] border-black/5"></div>
+<div className="absolute w-[320px] h-[320px] rounded-full bg-[rgba(14,12,10,0.03)] left-[-200px]"></div>
+<div className="absolute w-[320px] h-[320px] rounded-full bg-[rgba(14,12,10,0.03)] left-[-200px] top-40"></div>
+
+    <h1 className="text-[48px] font-bold text-black flex justify-center ">About us</h1>
+
+    <div className="flex gap-2 border border-gray-200 flex relative justify-center w-45 mx-auto rounded-full mt-5">
+        
+        <p className="text-[16px]">Home</p>
+        <p className="text-[16px] text-[#4F6BD6]">//</p>
+        <p className="text-[16px] text-[#4F6BD6]">About Us</p>
     </div>
-
-
-  <div
-  className="relative flex lg:px-[50px] lg:items-center pt-[100px] bg-cover bg-center bg-no-repeat px-[20px]"
-  style={{
-    backgroundImage: `linear-gradient(rgba(30, 58, 95, 0.7), rgba(30, 58, 95, 0.7)), url(${img})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    minHeight: "90vh",
-  }}
-
-  
-
->
-<div className="pt-10">
-
-
-<motion.div className="flex items-center gap-3 border border-gray-100 w-[200px] lg:py-[5px] justify-center rounded-3xl font-semibold "
-initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
-  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
-  viewport={{ once: true, amount: 0.3 }} // animate only the first time
-  transition={{ duration: 0.8, ease: "easeOut" }}
->
-    <svg className="text-white"
-  width="8"
-  height="8"
-  viewBox="0 0 8 8"
-  fill="currentColor"
->
-  <circle cx="4" cy="4" r="4" />
-</svg>
-    <p className="text-white">Quality Care at Home</p>
-</motion.div>
-
-<motion.h1 className="lg:text-[55px] text-[30px] font-bold lg:w-[600px] lg:leading-[60px] leading-[40px] mt-5 text-white"
-initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
-  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
-  viewport={{ once: true, amount: 0.3 }} // animate only the first time
-  transition={{
-  duration: 0.8,
-  delay: 0.4,
-  ease: "easeOut", }}
->Bringing Compassionate Home Care to Individuals and Families Across Minnesota</motion.h1>
-<motion.p className="text-[16px] lg:w-[400px]  text-white mt-5 font-thin"
- style={{
-    fontWeight: 500,
-  }}
-
-initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
-  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
-  viewport={{ once: true, amount: 0.3 }} // animate only the first time
-  transition={{
-  duration: 0.8,
-  delay: 0.6,
-  ease: "easeOut", }}
->Providing personalized in-home care services that promote independence, dignity, safety, and peace of mind for individuals and families throughout Minnesota.</motion.p>
-
-
-<div className="flex lg:flex-row flex-col lg:gap-2 gap-6 mt-5">
-    <motion.button className="bg-[#1E3A5F] text-white lg:w-[180px] w-full h-[45px] rounded-xl font-bold lg:mx-0 mx-auto"
-    initial={{ opacity: 0, y: 40, rotate: 0 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true, amount: 0.3 }}
-  transition={{
-    duration: 0.8,
-    delay: 1,
-    ease: "easeOut",
-  }}
-  animate={{
-    rotate: [0, -4, 4, -4, 4, 0],
-  }}
-  style={{ transformOrigin: "center center" }}
-    >Request Care</motion.button>
-
-
-    <motion.button className="bg-white text-#1E3A5F border border-[#1E3A5F] lg:w-[180px] w-full h-[40px] rounded-xl font-bold lg:mx-0mx-auto"
-     initial={{ opacity: 0, y: 40, rotate: 0 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true, amount: 0.3 }}
-  transition={{
-    duration: 0.8,
-    delay: 1.5,
-    ease: "easeOut",
-  }}
-  animate={{
-    rotate: [0, -4, 4, -4, 4, 0],
-  }}
-  style={{ transformOrigin: "center center" }}
-
-    >Refer a Client</motion.button>
-</div>
 </div>
 
-
-
-
-<div className="relative">
-
-
-
-
-</div>
-    </div>
-</section>
-
-)
+       </section>
+    )
 }
 
-export default Hero;
+export default AboutSec1;
