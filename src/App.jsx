@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Lenis from "lenis";
 
-import Hero from "./Home/Hero";
+
 import Section2 from "./Home/Section2";
 import Section3 from "./Home/Section3";
 import Section4 from "./Home/Section4";
@@ -65,7 +65,7 @@ function App() {
             path="/"
             element={
               <>
-                <Hero />
+               
                 <Section2 />
                 <Section3 />
                 <Section4 />
