@@ -79,7 +79,18 @@ function App() {
             }
           />
 
-          
+          <Route
+            path="/about"
+            element={
+              <>
+                <AboutSec1 />
+                <AboutSec2 />
+                <AboutSec3 />
+                <AboutSec4 />
+                <Footer />
+              </>
+            }
+          />
         </Routes>
       </main>
     </Router>
