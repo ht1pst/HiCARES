@@ -22,10 +22,10 @@ function Section3(){
     <p className="text-gray-700 text-[13px]">Our Services</p>
 </motion.div>
 
-<div className="flex flex-col lg:flex-row lg:items-center mt-5 lg:mt-0 justify-between ">
+<div className="flex flex-col lg:flex-row lg:items-center mt-5  justify-between ">
 
 <div>
-    <motion.h1 className="lg:text-[48px] text-[30px] font-bold lg:w-[500px] w-full leading-[40px]"
+    <motion.h1 className="lg:text-[48px] text-[30px] font-bold lg:w-[500px] w-full leading-[40px] lg:leading-[50px]"
     initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
   viewport={{ once: true, amount: 0.3 }} // animate only the first time
@@ -33,7 +33,7 @@ function Section3(){
     >Quality Care Across Every Medical Specialty</motion.h1>
 </div>
 
- <div className="mt-5 lg:mt-0">
+ <div className="mt-5 ">
        <motion.button className="bg-[#1E3A5F] text-white w-[190px] h-[50px] rounded-xl font-bold"
         initial={{ opacity: 0, y: 40 }}
   whileInView={{
@@ -54,7 +54,7 @@ function Section3(){
     },
   }}
   style={{ transformOrigin: "center center" }}
-       >View All Service</motion.button>
+      >View Service</motion.button>
 
 
     </div>
@@ -198,4 +198,4 @@ function Section3(){
     )
 }
 
-export default Section3
+export default Section3;

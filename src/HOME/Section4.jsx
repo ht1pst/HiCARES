@@ -29,7 +29,7 @@ function Section4(){
     <p className="text-gray-700 text-[13px]">Why Choose us</p>
 </motion.div>
 
-<motion.h1 className="lg:text-[48px] text-[30px] leading-[40px] lg:leading-[65px] font-bold lg:w-[600px] mt-5 lg:mt-0"
+<motion.h1 className="lg:text-[48px] text-[30px] leading-[40px] lg:leading-[50px] font-bold lg:w-[600px] mt-5 lg:mt-5"
  initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
   viewport={{ once: true, amount: 0.3 }} // animate only the first time
