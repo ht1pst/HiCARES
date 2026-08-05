@@ -113,6 +113,7 @@ function AboutSec2(){
         <p className="text-[16px] w-[150px]">Dedicated Home Care Team</p>
        </motion.div>
 </div>
+        
 </div>
 
        </section> 

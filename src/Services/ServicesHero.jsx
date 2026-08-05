@@ -19,7 +19,7 @@ useEffect(() => {
   return () => window.removeEventListener("scroll", handleScroll);
 }, []);
     return(
-<section>
+<section className="overflow-hidden">
 
         <header  className={`
     fixed top-0 left-0 w-full z-50
@@ -144,6 +144,9 @@ useEffect(() => {
         <p className="text-[16px] text-[#4F6BD6]">Services</p>
     </motion.div>
 </div>
+
+
+
 
 </section>
 

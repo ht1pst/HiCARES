@@ -23,8 +23,18 @@ import AboutSec4 from "./About/AboutSec4";
 import AboutSec5 from "./About/AboutSec5";
 
 import ServicesHero from "./Services/ServicesHero";
+import ServicesSection2 from "./Services/ServicesSection2";
+import ServicesSection3 from "./Services/ServicesSection3";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
+
+import ServicesDeetsHero from "./personalizedcare/ServicesDeetsHero";
+import ServicesOverview from "./personalizedcare/ServicesOverview";
+import WhyChooseHiCARES from "./personalizedcare/WhyChooseHiCARES";
+import HowItWorks from "./personalizedcare/HowItWorks";
+import CTA from "./personalizedcare/CTA";
+import CTA2 from "./personalizedcare/CTA2";
+import FAQ from "./personalizedcare/FAQ";
 function AppContent() {
   const location = useLocation();
   const [loading, setLoading] = useState(true);
@@ -107,9 +117,30 @@ function AppContent() {
             element={
               <>
                 <ServicesHero/>
+                <ServicesSection2/>
+                <ServicesSection3/>
+                <Section7 />
+                <Footer />
               </>
             }
           />
+
+ <Route
+            path="/personalizedcare"
+            element={
+              <>
+                <ServicesDeetsHero/>
+              <ServicesOverview/>
+               <WhyChooseHiCARES/>
+               <HowItWorks/>
+               <CTA/>
+               <CTA2/>
+               <FAQ/>
+               <Footer />
+              </>
+            }
+          />
+
         </Routes>
       </main>
     </>
