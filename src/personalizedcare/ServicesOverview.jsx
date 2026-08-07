@@ -67,193 +67,76 @@ function ServicesOverview(){
 
               <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
                 <div className="w-14 h-14 rounded-full bg-[#EAF8F6] flex items-center justify-center mb-4">
-                 <svg
-  className="w-[40px]"
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 64 64"
-  fill="none"
->
-  {/* Hands */}
-  <path
-    d="M18 42C18 36 22 32 28 32H36C42 32 46 36 46 42"
-    stroke="#0F2D52"
-    strokeWidth="4"
-    strokeLinecap="round"
-  />
-
-  {/* Heart */}
-  <path
-    d="M32 30
-       C32 30 24 24 24 18
-       C24 14.5 26.7 12 30 12
-       C31.9 12 33.7 13 35 14.8
-       C36.3 13 38.1 12 40 12
-       C43.3 12 46 14.5 46 18
-       C46 24 38 30 32 34
-       C26 30 18 24 18 18
-       C18 14.5 20.7 12 24 12
-       C27.3 12 30 14.5 30 18"
-    fill="#2EC4B6"
-  />
+       <svg className="w-[40px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <path d="M20 28H44V46H20V28Z" fill="#1E3A5F"/>
+  <path d="M24 28V22C24 17.5 27.5 14 32 14C36.5 14 40 17.5 40 22" stroke="#2EC4B6" strokeWidth="4" strokeLinecap="round"/>
+  <circle cx="48" cy="18" r="2" fill="#2EC4B6"/>
+  <circle cx="52" cy="24" r="2" fill="#2EC4B6"/>
+  <circle cx="46" cy="24" r="2" fill="#2EC4B6"/>
 </svg>
                 </div>
 
                 <h3 className="font-bold text-[#1E3A5F] text-xl">
-                  Compassion
+                  Bathing & Personal Hygiene
                 </h3>
 
                 <p className="text-gray-600 mt-3 leading-7">
-                  Care delivered with kindness, respect, and genuine
-                  understanding.
+                  Respectful assistance with bathing, grooming, and personal hygiene to help clients stay clean, comfortable, and confident.
                 </p>
               </div>
 
               <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
                 <div className="w-14 h-14 rounded-full bg-[#EAF8F6] flex items-center justify-center mb-4">
-                 <svg
-  className="w-[40px]"
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 64 64"
-  fill="none"
->
-  {/* House */}
-  <path
-    d="M12 30L32 14L52 30V50C52 51.1 51.1 52 50 52H14C12.9 52 12 51.1 12 50V30Z"
-    fill="#0F2D52"
-  />
-
-  {/* Door */}
-  <rect
-    x="28"
-    y="36"
-    width="8"
-    height="16"
-    rx="2"
-    fill="white"
-  />
-
-  {/* Heart */}
-  <path
-    d="M32 30
-       C32 30 26 25 26 20
-       C26 17.2 28.2 15 31 15
-       C32.5 15 33.9 15.8 35 17
-       C36.1 15.8 37.5 15 39 15
-       C41.8 15 44 17.2 44 20
-       C44 25 38 30 35 32
-       C32 30 32 30 32 30Z"
-    fill="#2EC4B6"
-  />
+     <svg className="w-[40px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <path d="M24 14L18 22L24 28L28 22H36L40 28L46 22L40 14H24Z" fill="#1E3A5F"/>
+  <path d="M28 22V50H36V22" fill="#2EC4B6"/>
 </svg>
                 </div>
 
                 <h3 className="font-bold text-[#1E3A5F] text-xl">
-                  Comfort at Home
+                  Dressing & Grooming
                 </h3>
 
                 <p className="text-gray-600 mt-3 leading-7">
-                  Helping clients remain comfortable in familiar surroundings.
+                  Helping clients dress comfortably and maintain a neat, well-groomed appearance while preserving independence and dignity.
                 </p>
               </div>
 
               <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
                 <div className="w-14 h-14 rounded-full bg-[#EAF8F6] flex items-center justify-center mb-4">
-                <svg
-  className="w-[40px]"
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 64 64"
-  fill="none"
->
-  {/* Clipboard */}
-  <rect
-    x="16"
-    y="12"
-    width="32"
-    height="40"
-    rx="4"
-    fill="#0F2D52"
-  />
-
-  {/* Clipboard Top */}
-  <rect
-    x="24"
-    y="8"
-    width="16"
-    height="8"
-    rx="3"
-    fill="#2EC4B6"
-  />
-
-  {/* Heart */}
-  <path
-    d="M32 28
-       C32 28 28 24.5 28 21.5
-       C28 19.6 29.5 18 31.5 18
-       C32.6 18 33.5 18.6 34 19.5
-       C34.5 18.6 35.4 18 36.5 18
-       C38.5 18 40 19.6 40 21.5
-       C40 24.5 36 28 32 30
-       C28 28 32 28 32 28Z"
-    fill="white"
-  />
-
-  {/* Checkmark */}
-  <path
-    d="M25 40L30 45L39 35"
-    stroke="#2EC4B6"
-    strokeWidth="4"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  />
+       <svg className="w-[40px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <circle cx="24" cy="14" r="5" fill="#1E3A5F"/>
+  <path d="M24 20L30 30L40 26" stroke="#1E3A5F" strokeWidth="4" strokeLinecap="round"/>
+  <path d="M30 30L24 46" stroke="#2EC4B6" strokeWidth="4" strokeLinecap="round"/>
+  <path d="M30 30L42 44" stroke="#2EC4B6" strokeWidth="4" strokeLinecap="round"/>
 </svg>
                 </div>
 
                 <h3 className="font-bold text-[#1E3A5F] text-xl">
-                  Personalized Care
+                  Mobility & Transfers
                 </h3>
 
                 <p className="text-gray-600 mt-3 leading-7">
-                  Every care plan is tailored to support each client's unique
-                  lifestyle and needs.
+                 Safe assistance with walking, repositioning, and transfers to help clients move confidently throughout their daily routine.
                 </p>
               </div>
 
               <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
                 <div className="w-14 h-14 rounded-full bg-[#EAF8F6] flex items-center justify-center mb-4">
-                  <svg
-  className="w-[40px]"
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 64 64"
-  fill="none"
->
-  {/* Shield */}
-  <path
-    d="M32 10L48 16V30C48 41 40 49 32 54C24 49 16 41 16 30V16L32 10Z"
-    fill="#0F2D52"
-  />
-
-  {/* Heart */}
-  <path
-    d="M32 38
-       C32 38 27 34 27 30
-       C27 27.8 28.8 26 31 26
-       C32.2 26 33.2 26.6 34 27.6
-       C34.8 26.6 35.8 26 37 26
-       C39.2 26 41 27.8 41 30
-       C41 34 36 38 32 41
-       C28 38 32 38 32 38Z"
-    fill="#2EC4B6"
-  />
+                <svg className="w-[40px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <circle cx="32" cy="16" r="5" fill="#1E3A5F"/>
+  <path d="M32 22V44" stroke="#1E3A5F" strokeWidth="4" strokeLinecap="round"/>
+  <path d="M20 30H44" stroke="#2EC4B6" strokeWidth="4" strokeLinecap="round"/>
+  <path d="M24 50H40" stroke="#2EC4B6" strokeWidth="4" strokeLinecap="round"/>
 </svg>
                 </div>
 
                 <h3 className="font-bold text-[#1E3A5F] text-xl">
-                  Peace of Mind
+                 Daily Living Support
                 </h3>
 
                 <p className="text-gray-600 mt-3 leading-7">
-                  Reliable support for clients and reassurance for their
-                  families.
+                  Assistance with eating, toileting, and everyday routines to promote independence, comfort, and overall well-being.
                 </p>
               </div>
 

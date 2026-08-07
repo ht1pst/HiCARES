@@ -5,14 +5,39 @@ function HowItWorks(){
 
         <section className="py-10 px-[20px]">
  <div>
-    <p className="flex lg:justify-center lg:text-[40px] text-[26px] font-bold">How It Works</p>
-    <h1 className="flex justify-center text-[40px] font-bold text-[#2EC4B6] leading-[43px] lg:leading-[55px] mt-4">Personalized Care, Centered Around You</h1>
-    <p className="flex justify-center lg:mx-auto text-[18px] lg:text-center lg:w-[900px] mt-4 ">Personalized home care provided for children, adults, and seniors always with compassion, professionalism, and respect. Each service is designed to enhance daily life, support independence, and give you lasting peace of mind.</p>
+    <motion.p className="flex lg:justify-center lg:text-[40px] text-[26px] font-bold"
+    initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+    >How It Works</motion.p>
+
+
+    <motion.h1 className="flex justify-center text-[40px] font-bold text-[#2EC4B6] leading-[43px] lg:leading-[55px] mt-4"
+    
+    initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+    >Personalized Care, Centered Around You</motion.h1>
+
+
+    <motion.p className="flex justify-center lg:mx-auto text-[18px] lg:text-center lg:w-[900px] mt-4 "
+    initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+    >Personalized home care provided for children, adults, and seniors always with compassion, professionalism, and respect. Each service is designed to enhance daily life, support independence, and give you lasting peace of mind.</motion.p>
  </div>
 
  <div className="flex flex-col lg:flex-row justify-center lg:gap-10 gap-15 mt-15">
 
-<div className="shadow-[0_10px_30px_rgba(30,58,95,0.15)] w-[280px]  px-[20px] pt-[60px] pb-[20px] relative rounded-xl mx-auto lg:mx-0">
+<motion.div className="shadow-[0_10px_30px_rgba(30,58,95,0.15)] w-[280px]  px-[20px] pt-[60px] pb-[20px] relative rounded-xl mx-auto lg:mx-0"
+initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
 
 <div className="absolute top-[-50px] left-1/2 -translate-x-1/2">
 <h1 className="font-bold text-[70px] text-[#2EC4B6]">1</h1>
@@ -41,10 +66,15 @@ function HowItWorks(){
 
 
 
-</div>
+</motion.div>
 
 
-<div className="shadow-[0_10px_30px_rgba(30,58,95,0.15)] w-[280px]  px-[20px] pt-[60px] pb-[20px] relative rounded-xl mx-auto lg:mx-0">
+<motion.div className="shadow-[0_10px_30px_rgba(30,58,95,0.15)] w-[280px]  px-[20px] pt-[60px] pb-[20px] relative rounded-xl mx-auto lg:mx-0"
+initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
 
 <div className="absolute top-[-50px] left-1/2 -translate-x-1/2">
 <h1 className="font-bold text-[70px] text-[#2EC4B6]">2</h1>
@@ -72,10 +102,15 @@ function HowItWorks(){
 
 
 
-</div>
+</motion.div>
 
 
-<div className="shadow-[0_10px_30px_rgba(30,58,95,0.15)] w-[280px]  px-[20px] pt-[60px] pb-[20px] relative rounded-xl mx-auto lg:mx-0">
+<motion.div className="shadow-[0_10px_30px_rgba(30,58,95,0.15)] w-[280px]  px-[20px] pt-[60px] pb-[20px] relative rounded-xl mx-auto lg:mx-0"
+initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
 
 <div className="absolute top-[-50px] left-1/2 -translate-x-1/2">
 <h1 className="font-bold text-[70px] text-[#2EC4B6]">3</h1>
@@ -102,11 +137,16 @@ function HowItWorks(){
 
 
 
-</div>
+</motion.div>
 
 
 
-<div className="shadow-[0_10px_30px_rgba(30,58,95,0.15)] w-[280px]  px-[20px] pt-[60px] pb-[20px] relative rounded-xl mx-auto lg:mx-0">
+<motion.div className="shadow-[0_10px_30px_rgba(30,58,95,0.15)] w-[280px]  px-[20px] pt-[60px] pb-[20px] relative rounded-xl mx-auto lg:mx-0"
+initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
 
 <div className="absolute top-[-50px] left-1/2 -translate-x-1/2">
 <h1 className="font-bold text-[70px] text-[#2EC4B6]">4</h1>
@@ -134,7 +174,7 @@ function HowItWorks(){
 
 
 
-</div>
+</motion.div>
 
  </div>
 

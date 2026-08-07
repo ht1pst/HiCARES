@@ -133,26 +133,77 @@ function ServicesDeetsHero() {
   {/* Content */}
   <div className="relative z-10 max-w-[1400px] mx-auto w-full px-6 lg:px-10">
     <div className="max-w-[750px]">
-      <p className="uppercase tracking-[3px] text-[#2EC4B6] font-semibold mb-4">
+      <motion.p className="uppercase tracking-[3px] text-[#2EC4B6] font-semibold mb-4"
+  initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{
+  duration: 0.8,
+  ease: "easeOut", }}
+      >
         HiCARES Services
-      </p>
+      </motion.p>
 
-      <h1 className="text-white text-5xl lg:text-7xl font-bold leading-tight">
+      <motion.h1 className="text-white text-[40px] lg:text-7xl font-bold leading-tight"
+      initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{
+  duration: 0.8,
+  delay: 0.4,
+  ease: "easeOut", }}
+      >
         Personalised Care
-      </h1>
+      </motion.h1>
 
-      <p className="mt-5 text-gray-200 text-lg lg:text-xl leading-7">
+      <motion.p className="mt-5 text-gray-200 text-lg lg:text-xl leading-7"
+      initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{
+  duration: 0.8,
+  delay: 0.6,
+  ease: "easeOut", }}
+      >
        Every care plan is thoughtfully tailored to each client's unique needs, preferences, and goals, ensuring compassionate, individualized support that promotes comfort, independence, and overall well-being.
-      </p>
+      </motion.p>
 
       <div className="mt-10 flex flex-col sm:flex-row gap-5">
-        <button className="bg-[#2EC4B6] hover:bg-white hover:text-[#1E3A5F] text-white font-semibold px-8 py-4 rounded-xl transition">
+        <motion.button className="bg-[#2EC4B6] hover:bg-white hover:text-[#1E3A5F] text-white font-semibold px-8 py-4 rounded-xl transition"
+        
+        initial={{ opacity: 0, y: 40, rotate: 0 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true, amount: 0.3 }}
+  transition={{
+    duration: 0.8,
+    delay: 1.5,
+    ease: "easeOut",
+  }}
+  animate={{
+    rotate: [0, -4, 4, -4, 4, 0],
+  }}
+  style={{ transformOrigin: "center center" }}
+        >
           Request Care
-        </button>
+        </motion.button>
 
-        <button className="border border-white text-white hover:bg-white hover:text-[#1E3A5F] font-semibold px-8 py-4 rounded-xl transition">
+        <motion.button className="border border-white text-white hover:bg-white hover:text-[#1E3A5F] font-semibold px-8 py-4 rounded-xl transition"
+        
+        initial={{ opacity: 0, y: 40, rotate: 0 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true, amount: 0.3 }}
+  transition={{
+    duration: 0.8,
+    delay: 1.5,
+    ease: "easeOut",
+  }}
+  animate={{
+    rotate: [0, -4, 4, -4, 4, 0],
+  }}
+  style={{ transformOrigin: "center center" }}
+        >
           Contact Us
-        </button>
+        </motion.button>
       </div>
     </div>
   </div>

@@ -51,6 +51,7 @@ function ServicesSection2(){
         </motion.div>
 </Link>
 
+<Link to="/skillednursing">
 <motion.div className="lg:w-[380px] border border-gray-200 lg:h-[360px] px-[15px] rounded-2xl border border-gray-200 bg-white h-auto py-10 lg:py-[30px]  transition-all duration-300 hover:border-teal-500 hover:shadow-lg"
  initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
@@ -91,7 +92,9 @@ function ServicesSection2(){
          <a href="#" className="underline">Read More</a>
          </div>
         </motion.div>
+</Link>
 
+<Link to="/medicineassist">
     <motion.div className="lg:w-[380px] border border-gray-200 lg:h-[360px] px-[15px] rounded-2xl border border-gray-200 bg-white h-auto py-10 lg:py-[30px]  transition-all duration-300 hover:border-teal-500 hover:shadow-lg"
          initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
@@ -134,10 +137,13 @@ function ServicesSection2(){
 
          </div>
         </motion.div>
+</Link>
 
 </div>
 
 <div className="flex gap-5 justify-between flex-col lg:flex-row  mt-10">
+
+    <Link to="/homehealth">
     
 <motion.div className="lg:w-[380px] border border-gray-200 lg:h-[360px] px-[15px] rounded-2xl border border-gray-200 bg-white h-auto py-10 lg:py-[30px]  transition-all duration-300 hover:border-teal-500 hover:shadow-lg"
  initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
@@ -187,6 +193,10 @@ function ServicesSection2(){
          </div>
         </motion.div>
 
+</Link>
+
+
+<Link to="/companioncare">
 <motion.div className="lg:w-[380px] border border-gray-200 lg:h-[360px] px-[15px] rounded-2xl border border-gray-200 bg-white h-auto py-10 lg:py-[30px]  transition-all duration-300 hover:border-teal-500 hover:shadow-lg"
  initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
@@ -227,7 +237,9 @@ function ServicesSection2(){
          <a href="#" className="underline">Read More</a>
          </div>
         </motion.div>
+</Link>
 
+<Link to="/homemaker">
  <motion.div className="lg:w-[380px] border border-gray-200 lg:h-[360px] px-[15px] rounded-2xl border border-gray-200 bg-white h-auto py-10 lg:py-[30px]  transition-all duration-300 hover:border-teal-500 hover:shadow-lg"
  initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
@@ -273,11 +285,14 @@ function ServicesSection2(){
          <a href="#" className="underline">Read More</a>
          </div>
         </motion.div>
-
+</Link>
  </div>
 
 
  <div className="flex gap-5 justify-between flex-col lg:flex-row  mt-10">
+
+<Link to="/respitecare">
+
 <motion.div className="lg:w-[380px] border border-gray-200 lg:h-[360px] px-[15px] rounded-2xl border border-gray-200 bg-white h-auto py-10 lg:py-[30px]  transition-all duration-300 hover:border-teal-500 hover:shadow-lg"
  initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
@@ -322,8 +337,9 @@ function ServicesSection2(){
          <a href="#" className="underline">Read More</a>
          </div>
         </motion.div>
+</Link>
 
-
+<Link to="/transport">
         <motion.div className="lg:w-[380px] border border-gray-200 lg:h-[360px] px-[15px] rounded-2xl border border-gray-200 bg-white h-auto py-10 lg:py-[30px]  transition-all duration-300 hover:border-teal-500 hover:shadow-lg"
  initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
@@ -364,8 +380,10 @@ function ServicesSection2(){
          <a href="#" className="underline">Read More</a>
          </div>
         </motion.div>
+</Link>
 
 
+<Link to="/carecoordination">
           <motion.div className="lg:w-[380px] border border-gray-200 lg:h-[360px] px-[15px] rounded-2xl border border-gray-200 bg-white h-auto py-10 lg:py-[30px]  transition-all duration-300 hover:border-teal-500 hover:shadow-lg"
  initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
@@ -409,7 +427,7 @@ function ServicesSection2(){
          <a href="#" className="underline">Read More</a>
          </div>
         </motion.div>
-
+</Link>
  </div>
 
 </section>

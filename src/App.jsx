@@ -35,6 +35,50 @@ import HowItWorks from "./personalizedcare/HowItWorks";
 import CTA from "./personalizedcare/CTA";
 import CTA2 from "./personalizedcare/CTA2";
 import FAQ from "./personalizedcare/FAQ";
+
+
+import SkilledHero from "./skillednursing/SkilledHero";
+import SkilledSection2 from "./skillednursing/SkilledSection2";
+import SkilledSection3 from "./skillednursing/SkilledSection3";
+import SkilledSection4 from "./skillednursing/SkilledSection4";
+import SkilledSection44 from "./skillednursing/SkilledSection44";
+import FAQ2 from "./skillednursing/FAQ2";
+
+
+import MedicineAssistHero from "./medicineassist/MedicineAssistHero";
+import MedicineAssistSection2 from "./medicineassist/MedicineAssistSection2";
+import MedicineAssistSection3 from "./medicineassist/MedicineAssistSection3";
+import MedicineAssistSection4 from "./medicineassist/MedicineAssistSection4";
+import MedicineAssistSection5 from "./medicineassist/MedicineAssistSection5";
+import FAQ3 from "./medicineassist/FAQ3";
+
+
+import HomeHealthHero from "./homehealth/HomeHealthHero";
+import HomeHealthsection2 from "./homehealth/HomeHealthsection2";
+import FAQ4 from "./homehealth/FAQ4";
+
+
+import CompanionCareHero from "./companioncare/CompanionCareHero";
+import CompanionCareSection2 from "./companioncare/CompanionCareSection2";
+import FAQ5 from "./companioncare/FAQ5";
+
+
+import HomeMakerHero from "./homemaker/HomeMakerHero";
+import HomeMakerSection2 from "./homemaker/HomeMakerSection2";
+import FAQ6 from "./homemaker/FAQ6";
+
+
+import RespiteCareHero from "./respitecare/RespiteCareHero";
+import RespiteCareSection2 from "./respitecare/RespiteCareSection2";
+import FAQ7 from "./respitecare/FAQ7.";
+
+import TransportHero from "./transport/TransportHero";
+import TransportSection2 from "./transport/TransportSection2";
+import FAQ8 from "./transport/FAQ8";
+
+import CareCoordinationHero from "./carecoordination/CareCoordinationHero";
+import CareCoordinationSection2 from "./carecoordination/CareCoordinationSection2";
+import FAQ9 from "./carecoordination/FAQ9";
 function AppContent() {
   const location = useLocation();
   const [loading, setLoading] = useState(true);
@@ -136,6 +180,141 @@ function AppContent() {
                <CTA/>
                <CTA2/>
                <FAQ/>
+               <Footer />
+              </>
+            }
+          />
+
+
+          <Route
+            path="/skillednursing"
+            element={
+              <>
+              <SkilledHero/>
+              <SkilledSection2/>
+               <WhyChooseHiCARES/>
+               <HowItWorks/>
+               <CTA/>
+               <CTA2/>
+               <FAQ2/>
+               <Footer />
+              </>
+            }
+          />
+
+          MedicineAssistHero
+
+ <Route
+            path="/medicineassist"
+            element={
+              <>
+              <MedicineAssistHero/>
+              <MedicineAssistSection2/>
+              <WhyChooseHiCARES/>
+               <HowItWorks/>
+               <CTA/>
+               <CTA2/>
+               <FAQ3/>
+               <Footer />
+              </>
+            }
+          />
+          
+
+          <Route
+            path="/homehealth"
+            element={
+              <>
+              <HomeHealthHero/>
+              <HomeHealthsection2/>
+              <WhyChooseHiCARES/>
+               <HowItWorks/>
+               <CTA/>
+               <CTA2/>
+               <FAQ4/>
+               <Footer />
+              </>
+            }
+          />
+
+
+ <Route
+            path="/companioncare"
+            element={
+              <>
+              <CompanionCareHero/>
+              <CompanionCareSection2/>
+              <WhyChooseHiCARES/>
+               <HowItWorks/>
+               <CTA/>
+               <CTA2/>
+               <FAQ5/>
+               <Footer />
+              </>
+            }
+          />
+
+
+          <Route
+            path="/homemaker"
+            element={
+              <>
+              <HomeMakerHero/>
+            <HomeMakerSection2/>
+              <WhyChooseHiCARES/>
+               <HowItWorks/>
+               <CTA/>
+               <CTA2/>
+               <FAQ6/>
+               <Footer />
+              </>
+            }
+          />
+
+
+           <Route
+            path="/respitecare"
+            element={
+              <>
+              <RespiteCareHero/>
+            <RespiteCareSection2/>
+              <WhyChooseHiCARES/>
+               <HowItWorks/>
+               <CTA/>
+               <CTA2/>
+               <FAQ7/>
+               <Footer />
+              </>
+            }
+          />
+
+           <Route
+            path="/transport"
+            element={
+              <>
+              <TransportHero/>
+            <TransportSection2/>
+              <WhyChooseHiCARES/>
+               <HowItWorks/>
+               <CTA/>
+               <CTA2/>
+               <FAQ8/>
+               <Footer />
+              </>
+            }
+          />
+
+            <Route
+            path="/carecoordination"
+            element={
+              <>
+              <CareCoordinationHero/>
+            <CareCoordinationSection2/>
+              <WhyChooseHiCARES/>
+               <HowItWorks/>
+               <CTA/>
+               <CTA2/>
+               <FAQ9/>
                <Footer />
               </>
             }
