@@ -274,7 +274,7 @@ useEffect(() => {
                </header>
 
 <div
-  className="relative z-10 min-h-screen bg-cover bg-center flex items-center pt-20"
+  className="relative z-10 min-h-screen bg-cover bg-center flex items-center"
   style={{ backgroundImage: `url(${img2})` }}
 >
   {/* Overlay */}
