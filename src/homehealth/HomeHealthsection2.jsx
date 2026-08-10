@@ -1,4 +1,4 @@
-import overviewImg from "../assets/homehealthsection2img.jpg";
+import overviewImg from "../assets/homehealthsection2img.webp";
 import { motion } from "framer-motion";
 function HomeHealthsection2(){
 const features = [
@@ -127,10 +127,10 @@ const features = [
     
               {/* Image */}
               <motion.div
-                initial={{ opacity: 0, x: -60 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: .8 }}
+                initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
                 className="relative"
               >
                 <img
@@ -152,10 +152,10 @@ const features = [
     
               {/* Content */}
               <motion.div
-                initial={{ opacity: 0, x: 60 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: .8 }}
+                initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
               >
                 <p className="uppercase tracking-[4px] text-[#2EC4B6] font-semibold">
                   Service Overview

@@ -4,7 +4,7 @@ import img from "../assets/heroimg2.jpg";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-import img2 from "../assets/transportheroimg.jpg";
+import img2 from "../assets/transportheroimg.webp";
 function TransportHero(){
      const [open, setOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);

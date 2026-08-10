@@ -4,7 +4,7 @@ import img from "../assets/heroimg2.jpg";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-import img2 from "../assets/medicalassistheroimg.jpg";
+import img2 from "../assets/medicalassistheroimg.webp";
 function MedicineAssistHero(){
      const [open, setOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);

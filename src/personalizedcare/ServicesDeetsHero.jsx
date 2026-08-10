@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
 import logo from "../assets/logonew.png";
-import img2 from "../assets/servicedeets1img.jpg";
+import img2 from "../assets/servicedeets1img.webp";
 
 function ServicesDeetsHero() {
   const [open, setOpen] = useState(false);
