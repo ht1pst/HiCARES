@@ -79,6 +79,10 @@ import FAQ8 from "./transport/FAQ8";
 import CareCoordinationHero from "./carecoordination/CareCoordinationHero";
 import CareCoordinationSection2 from "./carecoordination/CareCoordinationSection2";
 import FAQ9 from "./carecoordination/FAQ9";
+
+import WhyHero from "./why/WhyHero";
+import WhySection2 from "./why/WhySection2";
+import WhySection3 from "./why/WhySection3";
 function AppContent() {
   const location = useLocation();
   const [loading, setLoading] = useState(true);
@@ -315,6 +319,19 @@ function AppContent() {
                <CTA/>
                <CTA2/>
                <FAQ9/>
+               <Footer />
+              </>
+            }
+          />
+
+           <Route
+            path="/why"
+            element={
+              <>
+              <WhyHero/>
+              <WhySection3/>
+               <CTA/>
+               <CTA2/>
                <Footer />
               </>
             }
