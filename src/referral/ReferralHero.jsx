@@ -186,9 +186,14 @@ useEffect(() => {
   </div>
 
 
-<div>
+<motion.div
+initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
 <img src={img3} alt="" className="lg:w-[450px] w-[300px]" />
-</div>
+</motion.div>
        </div>
        </section>
     )
