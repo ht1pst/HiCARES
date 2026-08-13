@@ -1,17 +1,35 @@
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+
 function ReferralSection3(){
     return(
         <section className="h-auto pb-10 px-[20px]">
              <div className="flex flex-col justify-center items-center">
-                <h1 className=" mt-4 text-[#1E3A5F] text-[30px] lg:text-4xl font-bold leading-[40px] text-center ">Who Can Benefit From HiCARES?</h1>
+                <motion.h1 className=" mt-4 text-[#1E3A5F] text-[30px] lg:text-4xl font-bold leading-[40px] text-center "
+                initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+                >Who Can Benefit From HiCARES?</motion.h1>
 <div className="border border-2 border-[#2EC4B6] w-[100px] mt-3 "></div>
 
-                <p className=" mt-3 text-[#12243b]  #12243b text-md leading-[25px] lg:w-[800px] text-center">You can refer someone who may need help with:</p>
+                <motion.p className=" mt-3 text-[#12243b]  #12243b text-md leading-[25px] lg:w-[800px] text-center"
+                initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+                >You can refer someone who may need help with:</motion.p>
             </div>
 
 
             <div className="flex flex-col lg:flex-row justify-center gap-5 mt-10">
 
-<div className="border px-[20px] py-[10px] mx-auto w-[100%] lg:w-[180px] rounded-xl border-gray-100 border-3">
+<motion.div className="border px-[20px] py-[10px] mx-auto w-[100%] lg:w-[180px] rounded-xl border-gray-100 border-3"
+initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
 
 <div className="flex justify-center">
     <svg viewBox="0 0 64 64" fill="none" className="w-19 h-19">
@@ -31,9 +49,14 @@ function ReferralSection3(){
   </svg>
 </div>
     <h1 className="text-[#1E3A5F] font-bold text-center">Personal Care and Daily activities</h1>
-</div>
+</motion.div>
 
-<div className="border px-[20px] py-[10px] mx-auto w-[100%] lg:w-[180px] rounded-xl border-gray-100 border-3">
+<motion.div className="border px-[20px] py-[10px] mx-auto w-[100%] lg:w-[180px] rounded-xl border-gray-100 border-3"
+initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
 
 <div className="flex justify-center">
     <svg viewBox="0 0 64 64" fill="none" className="w-19 h-19">
@@ -79,10 +102,15 @@ function ReferralSection3(){
   </svg>
 </div>
     <h1 className="text-[#1E3A5F] font-bold text-center">Medication Management</h1>
-</div>
+</motion.div>
 
 
-<div className="border px-[20px] py-[10px] mx-auto w-[100%] lg:w-[180px] rounded-xl border-gray-100 border-3">
+<motion.div className="border px-[20px] py-[10px] mx-auto w-[100%] lg:w-[180px] rounded-xl border-gray-100 border-3"
+initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
 
 <div className="flex justify-center">
     <svg viewBox="0 0 64 64" fill="none" className="w-19 h-19">
@@ -114,10 +142,15 @@ function ReferralSection3(){
   </svg>
 </div>
     <h1 className="text-[#1E3A5F] font-bold text-center mt-5">Respite Care</h1>
-</div>
+</motion.div>
 
 
-<div className="border px-[20px] py-[10px] mx-auto w-[100%] lg:w-[180px] rounded-xl border-gray-100 border-3">
+<motion.div className="border px-[20px] py-[10px] mx-auto w-[100%] lg:w-[180px] rounded-xl border-gray-100 border-3"
+initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
 
 <div className="flex justify-center">
     <svg viewBox="0 0 64 64" fill="none" className="w-19 h-19">
@@ -155,10 +188,15 @@ function ReferralSection3(){
   </svg>
 </div>
     <h1 className="text-[#1E3A5F] font-bold text-center">Homemaking and household support</h1>
-</div>
+</motion.div>
 
 
-<div className="border px-[20px] py-[10px] mx-auto w-[100%] lg:w-[180px] rounded-xl border-gray-100 border-3">
+<motion.div className="border px-[20px] py-[10px] mx-auto w-[100%] lg:w-[180px] rounded-xl border-gray-100 border-3"
+initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
 
 <div className="flex justify-center">
     <svg viewBox="0 0 64 64" fill="none" className="w-19 h-19">
@@ -191,11 +229,16 @@ function ReferralSection3(){
   </svg>
 </div>
     <h1 className="text-[#1E3A5F] font-bold text-center">Maintaining independence at home</h1>
-</div>
+</motion.div>
 
 
 
-<div className="border px-[20px] py-[10px] mx-auto w-[100%] lg:w-[180px] rounded-xl border-gray-100 border-3">
+<motion.div className="border px-[20px] py-[10px] mx-auto w-[100%] lg:w-[180px] rounded-xl border-gray-100 border-3"
+initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
 
 <div className="flex justify-center">
    <svg viewBox="0 0 64 64" fill="none" className="w-19 h-19">
@@ -227,7 +270,7 @@ function ReferralSection3(){
   </svg>
 </div>
     <h1 className="text-[#1E3A5F] font-bold text-center">Ongoing companionship and assistance</h1>
-</div>
+</motion.div>
 
             </div>
 

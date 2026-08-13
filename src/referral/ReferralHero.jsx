@@ -117,7 +117,7 @@ useEffect(() => {
                  </AnimatePresence>
                </header>
 
-       <div className="relative lg:gap-10 z-10 min-h-screen bg-cover bg-center justify-center flex flex-col items-center lg:pt-10 pt-25"
+       <div className="relative lg:gap-10 z-10 min-h-screen bg-cover bg-center justify-center flex flex-col lg:flex-row items-center lg:pt-10 pt-25"
        style={{ backgroundImage: `url(${img2})` }}
        >
 

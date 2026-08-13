@@ -5,7 +5,7 @@ return(
     <section className="h-auto pb-10 px-[20px]">
 
 <div>
-        <motion.p className="uppercase tracking-[3px] text-[#2EC4B6] font-semibold  flex lg:justify-center
+        <motion.p className="uppercase tracking-[3px] text-[#2EC4B6] font-semibold  flex justify-center
       "
       initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
@@ -17,7 +17,7 @@ return(
         HOW IT WORKS
       </motion.p>
 
- <motion.h1 className="text-[#1E3A5F] leading-[35px] text-[30px] lg:text-4xl font-bold  flex justify-center mt-5"
+ <motion.h1 className="text-[#1E3A5F] leading-[35px] text-[30px] lg:text-4xl font-bold  flex justify-center mt-5 text-center"
       initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
   viewport={{ once: true, amount: 0.3 }} // animate only the first time
@@ -29,15 +29,29 @@ return(
        Making a Referral Is Easy
       </motion.h1>
 
-<div className="border border-2 hidden lg:block border-[#2EC4B6] w-[100px] mt-3 flex justify-center mx-auto"></div>
+<motion.div className="border border-2  border-[#2EC4B6] w-[100px] mt-3 flex justify-center mx-auto"
+        initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+></motion.div>
 
-<p className="mx-auto lg:w-[650px] mt-3 lg:text-center">Helping someone connect with the right care doesn't have to be complicated. Our simple referral process makes it easy to share their needs with the HiCARES team and get the conversation started.</p>
+<motion.p className="mx-auto lg:w-[650px] mt-3 text-center"
+        initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>Helping someone connect with the right care doesn't have to be complicated. Our simple referral process makes it easy to share their needs with the HiCARES team and get the conversation started.</motion.p>
 
 </div>
 
 <div className="flex flex-col lg:flex-row justify-center items-center lg:gap-15 gap-20 mt-10">
 
-<div
+<motion.div
+        initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
 >
 <div className="w-26 h-26 rounded-full bg-[#E5F2E8] flex items-center justify-center mx-auto">
   <svg
@@ -103,9 +117,14 @@ return(
 </div>
 
 
-</div>
+</motion.div>
 
-<div className="rotate-90 lg:rotate-0">
+<motion.div className="rotate-90 lg:rotate-0"
+        initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
   <svg
   width="120"
   height="30"
@@ -129,9 +148,14 @@ return(
     strokeLinejoin="round"
   />
 </svg>
-</div>
+</motion.div>
 
-<div>
+<motion.div
+        initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
 <div className="w-26 h-26 rounded-full bg-[#E5F2E8] flex items-center justify-center mx-auto">
   <svg
     viewBox="0 0 64 64"
@@ -195,10 +219,15 @@ return(
 </div>
 
 
-</div>
+</motion.div>
 
 
-<div className="rotate-90 lg:rotate-0">
+<motion.div className="rotate-90 lg:rotate-0"
+        initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
    <svg
   width="120"
   height="30"
@@ -222,9 +251,14 @@ return(
     strokeLinejoin="round"
   />
 </svg>
-</div>
+</motion.div>
 
-<div>
+<motion.div
+        initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
 <div className="w-26 h-26 rounded-full bg-[#E5F2E8] flex items-center justify-center mx-auto">
   <svg
     viewBox="0 0 64 64"
@@ -259,7 +293,7 @@ return(
 </div>
 
 
-</div>
+</motion.div>
 
 
 

@@ -1,3 +1,5 @@
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 function ReferralSection6(){
     return(
 <section className="relative py-20 px-6 bg-[#F7FAF8] overflow-hidden">
@@ -5,22 +7,42 @@ function ReferralSection6(){
 
     {/* Section Header */}
     <div className="text-center max-w-2xl mx-auto mb-12">
-      <p className="text-[#2EC4B6] font-semibold text-sm uppercase tracking-wider mb-3">
+      <motion.p className="text-[#2EC4B6] font-semibold text-sm uppercase tracking-wider mb-3"
+      initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         Make a Referral
-      </p>
+      </motion.p>
 
-      <h2 className="text-[32px] md:text-[42px] font-bold text-[#1E3A5F] leading-tight">
+      <motion.h2 className="text-[32px] md:text-[42px] font-bold text-[#1E3A5F] leading-tight"
+      initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         Refer Someone Who May Need Care
-      </h2>
+      </motion.h2>
 
-      <p className="text-[#5F6F7A] text-[15px] md:text-[16px] mt-4 leading-7">
+      <motion.p className="text-[#5F6F7A] text-[15px] md:text-[16px] mt-4 leading-7"
+      initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         Know someone who could benefit from compassionate, professional
         care? Complete the form below and our team will be in touch.
-      </p>
+      </motion.p>
     </div>
 
     {/* Form Card */}
-    <div
+    <motion.div
+initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+
       className="
         relative max-w-4xl mx-auto bg-white rounded-3xl p-6 md:p-10
         before:absolute before:inset-0 before:rounded-3xl
@@ -353,7 +375,7 @@ function ReferralSection6(){
 
         </form>
       </div>
-    </div>
+    </motion.div>
   </div>
 </section>
     )

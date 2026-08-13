@@ -1,18 +1,43 @@
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 function ReferralSection2(){
     return(
         <section className="h-auto pb-10 px-[20px]">
             <div className="flex flex-col justify-center lg:items-center">
-                <p className="mt-4 text-[#2EC4B6] font-semibold">WHY REFER?</p>
 
-                <h1 className=" mt-4 text-[#1E3A5F] text-[30px] lg:text-4xl font-bold leading-[35px] ">A Simple Referral Can Make a Difference</h1>
+                <motion.p className="mt-4 text-[#2EC4B6] font-semibold"
+                 initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+                >WHY REFER?</motion.p>
+
+                <motion.h1 className=" mt-4 text-[#1E3A5F] text-[30px] lg:text-4xl font-bold leading-[35px]"
+                 initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+                >A Simple Referral Can Make a Difference</motion.h1>
+
+
 <div className="border hidden lg:block border-2 border-[#2EC4B6] w-[100px] mt-3"></div>
 
-                <p className=" mt-3 text-[#12243b]  #12243b text-md leading-[25px] lg:w-[800px] lg:text-center">Whether you're a family member, healthcare professional, community organization, or someone who simply knows a person in need of support, your referral can help connect them with trusted home care.</p>
+                <motion.p className=" mt-3 text-[#12243b]  #12243b text-md leading-[25px] lg:w-[800px] lg:text-center"
+                 initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+                >Whether you're a family member, healthcare professional, community organization, or someone who simply knows a person in need of support, your referral can help connect them with trusted home care.</motion.p>
             </div>
 
 <div className=" flex flex-col lg:flex-row justify-center lg:gap-10 gap-15 mt-20">
 
-<div className="lg:w-[360px] bg-[#fcfdfc] #fcfdfc  flex flex-col items-center pt-24  px-[20px] py-[10px]  shadow-[0_10px_30px_rgba(0,0,0,0.18)] shadow-xl relative h-[200px] rounded-xl">
+<motion.div className="lg:w-[360px] bg-[#fcfdfc] #fcfdfc  flex flex-col items-center pt-24  px-[20px] py-[10px]  shadow-[0_10px_30px_rgba(0,0,0,0.18)] shadow-xl relative h-[200px] rounded-xl"
+ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
 
     <div className="w-26 h-26 rounded-full bg-[#EEECF7] flex items-center justify-center absolute top-[-20px]">
   <svg viewBox="0 0 64 64" fill="none" className="w-19 h-19">
@@ -34,9 +59,14 @@ function ReferralSection2(){
 
     <h1 className="text-[#1E3A5F] font-bold text-[25px] text-center">Compassionate Care</h1>
     <p className="text-[#12243b] text-[15px] text-center">Care delivered with dignity, kindness, and understanding.</p>
-</div>
+</motion.div>
 
-<div className="lg:w-[360px] bg-[#fcfdfc] flex flex-col items-center pt-24  px-[20px] py-[10px]  shadow-[0_10px_30px_rgba(0,0,0,0.18)] shadow-xl relative h-[200px] rounded-xl">
+<motion.div className="lg:w-[360px] bg-[#fcfdfc] flex flex-col items-center pt-24  px-[20px] py-[10px]  shadow-[0_10px_30px_rgba(0,0,0,0.18)] shadow-xl relative h-[200px] rounded-xl"
+ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
 
   <div className="w-26 h-26 rounded-full bg-[#E5F2E8] #ebf3ed flex items-center justify-center absolute top-[-20px]">
   <svg viewBox="0 0 64 64" fill="none" className="w-19 h-19">
@@ -70,10 +100,15 @@ function ReferralSection2(){
 
     <h1 className="text-[#1E3A5F] font-bold text-[25px] text-center">Personalized Support</h1>
     <p className="text-[#12243b] text-[15px] text-center">Support tailored to each client's unique needs and preferences.</p>
-</div>
+</motion.div>
 
 
-<div className="lg:w-[360px] bg-[#fcfdfc] flex flex-col items-center pt-24  px-[20px] py-[10px]  shadow-[0_10px_30px_rgba(0,0,0,0.18)] shadow-xl relative h-[200px] rounded-xl">
+<motion.div className="lg:w-[360px] bg-[#fcfdfc] flex flex-col items-center pt-24  px-[20px] py-[10px]  shadow-[0_10px_30px_rgba(0,0,0,0.18)] shadow-xl relative h-[200px] rounded-xl"
+ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
+  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
+  viewport={{ once: true, amount: 0.3 }} // animate only the first time
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
 
     <div className="w-26 h-26 rounded-full bg-[#E4F0F9] flex items-center justify-center absolute top-[-20px]">
     <svg viewBox="0 0 64 64" fill="none" className="w-19 h-19">
@@ -95,7 +130,7 @@ function ReferralSection2(){
 
     <h1 className="text-[#1E3A5F] font-bold text-[25px] text-center">Peace of Mind</h1>
     <p className="text-[#12243b] text-[15px] text-center">Reliable care that helps families feel confident and reassured.</p>
-</div>
+</motion.div>
 
 </div>
 
