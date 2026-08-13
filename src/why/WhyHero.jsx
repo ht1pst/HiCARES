@@ -320,7 +320,7 @@ People Who Truly Care.
       At HiCARES, we go beyond providing care we build meaningful relationships, support independence, and bring peace of mind to every family we serve.
       </motion.p>
 
-      <div className="mt-5 flex flex-col sm:flex-row gap-5">
+      <div className="lg:mt-5 mt-10 flex flex-col sm:flex-row gap-5">
         <motion.button className="bg-[#2EC4B6] hover:bg-white hover:text-[#1E3A5F] text-[15px] text-white font-semibold lg:w-[340px] h-[50px] rounded-3xl transition"
          initial={{ opacity: 0, y: 40, rotate: 0 }}
   whileInView={{ opacity: 1, y: 0 }}

@@ -83,6 +83,13 @@ import FAQ9 from "./carecoordination/FAQ9";
 import WhyHero from "./why/WhyHero";
 import WhySection2 from "./why/WhySection2";
 import WhySection3 from "./why/WhySection3";
+
+import ReferralHero from "./referral/ReferralHero";
+import ReferralSection2 from "./referral/ReferralSection2";
+import ReferralSection3 from "./referral/ReferralSection3";
+import ReferralSection4 from "./referral/ReferralSection4";
+import ReferralSection5 from "./referral/ReferralSection5";
+import ReferralSection6 from "./referral/ReferralSection6";
 function AppContent() {
   const location = useLocation();
   const [loading, setLoading] = useState(true);
@@ -336,6 +343,24 @@ function AppContent() {
               </>
             }
           />
+
+           <Route
+            path="/referral"
+            element={
+              <>
+             <ReferralHero/>
+              <ReferralSection2/>
+              <ReferralSection3/>
+              <ReferralSection4/>
+              <ReferralSection5/>
+              <ReferralSection6/>
+               <CTA/>
+               <CTA2/>
+               <Footer />
+              </>
+            }
+          />
+
 
         </Routes>
       </main>
