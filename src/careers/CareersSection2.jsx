@@ -1,4 +1,4 @@
-import img from "../assets/careerssection2img.jpg";
+import img from "../assets/careerssection2img.webp";
 import img4 from "../assets/team-img1.jpg";
 import img2 from "../assets/healthcare.png";
 import img3 from "../assets/protection.png";

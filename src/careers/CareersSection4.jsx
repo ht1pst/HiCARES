@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-import img from "../assets/careersection4img.jpg";
+import img from "../assets/careersection4img.webp";
 function CareersSection4(){
   const whyChooseUs = [
   {
@@ -351,6 +351,7 @@ return(
         yourself and your experience, and our team will review your
         application for available opportunities.
       </motion.p>
+
 
     </div>
 
