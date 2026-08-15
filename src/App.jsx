@@ -90,6 +90,13 @@ import ReferralSection3 from "./referral/ReferralSection3";
 import ReferralSection4 from "./referral/ReferralSection4";
 import ReferralSection5 from "./referral/ReferralSection5";
 import ReferralSection6 from "./referral/ReferralSection6";
+
+
+import CareersHero from "./careers/CareersHero";
+import CareersSection2 from "./careers/CareersSection2";
+import CareersSection3 from "./careers/CareersSection3";
+import CareersSection4 from "./careers/CareersSection4";
+import CareersSection5 from "./careers/CareersSection5";
 function AppContent() {
   const location = useLocation();
   const [loading, setLoading] = useState(true);
@@ -356,6 +363,19 @@ function AppContent() {
               <ReferralSection6/>
                <CTA/>
                <CTA2/>
+               <Footer />
+              </>
+            }
+          />
+
+           <Route
+            path="/careers"
+            element={
+              <>
+            <CareersHero/>
+            <CareersSection2/>
+            <CareersSection3/>
+            <CareersSection4/>
                <Footer />
               </>
             }

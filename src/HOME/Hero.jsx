@@ -43,6 +43,7 @@ return(
         <Link to="/services">Services</Link>
         <Link to="/why">Why Choose Us</Link>
         <Link to="/referral">Referral</Link>
+        <Link to="/careers">Careers</Link>
         <Link to="/contact">Contact Us</Link>
       </nav>
 
@@ -103,6 +104,7 @@ return(
         <Link to="/services" onClick={() => setOpen(false)}>Services</Link>
         <Link to="/why" onClick={() => setOpen(false)}>Why Choose Us</Link>
         <Link to="/referral" onClick={() => setOpen(false)}>Referral</Link>
+         <Link to="/careers" onClick={() => setOpen(false)}>careers</Link>
         <Link to="/contact" onClick={() => setOpen(false)}>Contact Us</Link>
               </nav>
 
