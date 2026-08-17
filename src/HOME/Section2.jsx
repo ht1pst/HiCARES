@@ -199,7 +199,7 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   }}
   style={{ transformOrigin: "center center" }}
 >
-  Aboutgt
+  About Us
 </motion.button>
     </motion.div>
 
