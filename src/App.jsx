@@ -101,6 +101,7 @@ import CareersSection5 from "./careers/CareersSection5";
 
 import ContactHero from "./contact/ContactHero";
 import ContactSection2 from "./contact/ContactSection2";
+import ContactSection3 from "./contact/ContactSection3";
 function AppContent() {
   const location = useLocation();
   const [loading, setLoading] = useState(true);
@@ -390,6 +391,7 @@ function AppContent() {
             element={
               <>
             <ContactHero/>
+             <ContactSection3/>
             <ContactSection2/>
             <Footer />
             

@@ -203,21 +203,7 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
 </motion.button>
     </motion.div>
 
-<motion.div className="flex items-center gap-6 mt-5"
-initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
-  whileInView={{ opacity: 1, y: 0 }}    // slides up into view
-  viewport={{ once: true, amount: 0.3 }} // animate only the first time
-  transition={{ duration: 0.8, ease: "easeOut" }}
->
-<img src={img4} alt=""className="rounded-full w-13 h-13" />
-<div>
-    <h1 className="text-[17px] ">Janmie Ash</h1>
-    <p className="text-[12px] text-gray-500">Managing Director</p>
-</div>
-<div>
 
-</div>
-</motion.div>
 
         </div>
 

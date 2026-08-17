@@ -18,7 +18,7 @@ useEffect(() => {
   return () => window.removeEventListener("scroll", handleScroll);
 }, []);
 return(
-<section className="h-auto pb-10 ">
+<section className="h-screen pb-10 ">
     <div>
         
 <header  className={`
@@ -127,7 +127,7 @@ return(
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    minHeight: "90vh",
+    minHeight: "100vh",
   }}
 
   
