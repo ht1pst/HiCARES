@@ -97,6 +97,10 @@ import CareersSection2 from "./careers/CareersSection2";
 import CareersSection3 from "./careers/CareersSection3";
 import CareersSection4 from "./careers/CareersSection4";
 import CareersSection5 from "./careers/CareersSection5";
+
+
+import ContactHero from "./contact/ContactHero";
+import ContactSection2 from "./contact/ContactSection2";
 function AppContent() {
   const location = useLocation();
   const [loading, setLoading] = useState(true);
@@ -377,6 +381,18 @@ function AppContent() {
             <CareersSection3/>
             <CareersSection4/>
                <Footer />
+              </>
+            }
+          />
+
+            <Route
+            path="/contact"
+            element={
+              <>
+            <ContactHero/>
+            <ContactSection2/>
+            <Footer />
+            
               </>
             }
           />
