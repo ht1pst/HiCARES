@@ -4,9 +4,9 @@ function ContactSection2(){
 
 <div className="flex lg:flex-row flex-col">
 
-<div className="flex flex-col  lg:items-end gap-5 bg-[#DCE9E5] #e3dede justify-center lg:w-[50%]  lg:px-[200px] py-[50px] font-bold">
+<div className="flex flex-col   gap-5 bg-[#DCE9E5] #e3dede justify-center lg:w-[50%]  lg:px-[200px] py-[50px] font-bold">
 
-<div className="flex items-center gap-3 mx-auto lg:mx-0">
+<div className="flex items-center lg:gap-3 justify-between mx-auto gap-3 lg:mx-0">
 
 <div>
     <svg
@@ -33,12 +33,13 @@ function ContactSection2(){
 </svg>
 </div>
 
-<p>Jessup, MD 20794, USA</p>
+<p className="w-[200px] lg:w-full">819 30th Ave  South, <span className="hidden lg:block"><br/> </span> Suite 200D 
+Moorhead, MN 56560</p>
 
 </div>
 
 
-<div className="flex items-center gap-3 mx-auto lg:mx-0">
+<div className="flex items-center lg:gap-3 justify-between mx-auto gap-3 lg:mx-0">
 
 <div>
  <svg
@@ -63,7 +64,7 @@ function ContactSection2(){
 </div>
 
 
-<div className="flex items-center gap-3 mx-auto lg:mx-0">
+<div className="flex items-center lg:gap-3 justify-between mx-auto gap-3 lg:mx-0">
 
 <div>
   <svg
@@ -93,7 +94,7 @@ function ContactSection2(){
 </svg>
 </div>
 
-<p>care@spiritofhopeagency.com</p>
+<p>info@hicaresservices.com</p>
 
 </div>
 
