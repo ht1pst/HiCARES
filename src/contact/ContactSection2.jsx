@@ -6,7 +6,7 @@ function ContactSection2(){
 
 <div className="flex flex-col   gap-5 bg-[#DCE9E5] #e3dede justify-center lg:w-[50%]  lg:px-[200px] py-[50px] font-bold">
 
-<div className="flex items-center lg:gap-3 justify-between mx-auto gap-3 lg:mx-0">
+<div className="flex px-[100px] items-center lg:gap-3 justify-between mx-auto gap-3 lg:mx-0">
 
 <div>
     <svg
@@ -33,7 +33,7 @@ function ContactSection2(){
 </svg>
 </div>
 
-<p className="w-[200px] lg:w-full">819 30th Ave  South, <span className="hidden lg:block"><br/> </span> Suite 200D 
+<p className="">819 30th Ave  South, <span className="hidden lg:block"><br/> </span> Suite 200D 
 Moorhead, MN 56560</p>
 
 </div>
