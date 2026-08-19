@@ -3,7 +3,9 @@ import careersCtaImg from "../assets/careersection4img.webp";
 
 function CareersSection5() {
   return (
-    <section className="relative overflow-hidden bg-[#064C73]">
+    <section className="relative overflow-hidden bg-[#064C73]"
+    id="careersform"
+    >
 
       <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
 

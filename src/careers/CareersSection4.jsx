@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import img from "../assets/careersection4img.webp";
 function CareersSection4(){
+  const navigate = useNavigate();
   const whyChooseUs = [
   {
     title: "Personalized  Care Plans",
@@ -162,7 +163,7 @@ function CareersSection4(){
 
 return(
 
-     <section className="relative px-[20px]">
+     <section  className="relative px-[20px]">
    
    
            <div className="absolute  block top-90 left-0 w-30 h-80 bg-[#aefdec] #aefdec rounded-full blur-[120px] opacity-70"></div>
@@ -184,7 +185,7 @@ return(
    
                <div>
    
-     <motion.div className="flex items-center gap-3 border border-gray-300 w-[170px] py-[5px] justify-center rounded-3xl font-semibold "
+     <motion.div  className="flex items-center gap-3 border border-gray-300 w-[170px] py-[5px] justify-center rounded-3xl font-semibold "
      initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
      whileInView={{ opacity: 1, y: 0 }}    // slides up into view
      viewport={{ once: true, amount: 0.3 }} // animate only the first time
@@ -201,7 +202,7 @@ return(
        <p className="text-gray-700 text-[13px]"> WHY JOIN HiCARES</p>
    </motion.div>
    
-   <motion.h1 className="lg:text-[48px] text-[30px] leading-[40px] lg:leading-[65px] font-bold lg:w-[600px] mt-3 lg:mt-4"
+   <motion.h1 id="careersform" className="lg:text-[48px] text-[30px] leading-[40px] lg:leading-[65px] font-bold lg:w-[600px] mt-3 lg:mt-4"
    initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
      whileInView={{ opacity: 1, y: 0 }}    // slides up into view
      viewport={{ once: true, amount: 0.3 }} // animate only the first time
@@ -303,6 +304,7 @@ return(
        },
      }}
      style={{ transformOrigin: "center center" }}
+     onClick={() => document.getElementById("careersform")?.scrollIntoView({ behavior: "smooth" })}
           >Apply Now</motion.button>
        </div>
    
@@ -356,7 +358,8 @@ return(
     </div>
 
     {/* Form */}
-    <motion.form className="bg-white rounded-[30px] shadow-sm border border-gray-100 p-6 lg:p-10"
+    
+    <motion.form  className="bg-white rounded-[30px] shadow-sm border border-gray-100 p-6 lg:p-10"
     initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
   viewport={{ once: true, amount: 0.3 }} // animate only the first time

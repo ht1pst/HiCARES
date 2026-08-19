@@ -178,6 +178,7 @@ useEffect(() => {
     rotate: [0, -4, 4, -4, 4, 0],
   }}
   style={{ transformOrigin: "center center" }}
+   onClick={() => document.getElementById("form")?.scrollIntoView({ behavior: "smooth" })}
         >
           Make a Referral →
         </motion.button>

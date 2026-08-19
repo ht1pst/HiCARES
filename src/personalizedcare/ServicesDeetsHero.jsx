@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/logonew.png";
 import img2 from "../assets/servicedeets1img.webp";
 
 function ServicesDeetsHero() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -185,6 +185,7 @@ function ServicesDeetsHero() {
     rotate: [0, -4, 4, -4, 4, 0],
   }}
   style={{ transformOrigin: "center center" }}
+  onClick={() => navigate("/contact")}
         >
           Request Care
         </motion.button>
@@ -203,6 +204,7 @@ function ServicesDeetsHero() {
     rotate: [0, -4, 4, -4, 4, 0],
   }}
   style={{ transformOrigin: "center center" }}
+  onClick={() => navigate("/contact")}
         >
           Contact Us
         </motion.button>

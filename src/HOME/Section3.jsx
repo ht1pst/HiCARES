@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link, useNavigate } from "react-router-dom";
 function Section3(){
+  const navigate = useNavigate();
     return(
 <section className="lg:px-[70px] px-[20px] h-auto pb-10 lg:pt-20 pt-5">
     <div>
@@ -54,6 +56,7 @@ function Section3(){
     },
   }}
   style={{ transformOrigin: "center center" }}
+  onClick={() => navigate("/services")}
       >View Service</motion.button>
 
 
@@ -64,6 +67,7 @@ function Section3(){
 
     <div className="flex gap-5 justify-between flex-col lg:flex-row  mt-10">
 
+<Link to="/personalizedcare">
 <motion.div className="lg:w-[450px] border border-gray-200 lg:px-[30px] px-[15px] rounded-2xl border border-gray-200 bg-white py-[30px]  transition-all duration-300 hover:border-teal-500 hover:shadow-lg"
  initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
@@ -103,8 +107,9 @@ function Section3(){
          <a href="#" className="underline">Read More</a>
          </div>
         </motion.div>
+</Link>
 
-
+<Link to="/skillednursing">
 <motion.div className="lg:w-[450px] border border-gray-200 lg:px-[30px] px-[15px] rounded-2xl border border-gray-200 bg-white py-[30px]  transition-all duration-300 hover:border-teal-500 hover:shadow-lg"
  initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
@@ -145,8 +150,9 @@ function Section3(){
          <a href="#" className="underline">Read More</a>
          </div>
         </motion.div>
+</Link>
 
-
+<Link to="/medicineassist">
         <motion.div className="lg:w-[450px] border border-gray-200 lg:px-[30px] px-[15px] rounded-2xl border border-gray-200 bg-white py-[30px]  transition-all duration-300 hover:border-teal-500 hover:shadow-lg"
          initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
@@ -189,7 +195,7 @@ function Section3(){
 
          </div>
         </motion.div>
-
+</Link>
 
     </div>
 

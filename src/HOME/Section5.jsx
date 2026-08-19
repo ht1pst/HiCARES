@@ -1,8 +1,12 @@
 import img from "../assets/section5img.jpg";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link, useNavigate } from "react-router-dom";
+
 function Section5(){
+  const navigate = useNavigate();
 return(
+
     <section className="relative px-[20px]">
 
 
@@ -121,6 +125,7 @@ Family & Provider Collaboration
     },
   }}
   style={{ transformOrigin: "center center" }}
+  onClick={() => navigate("/contact")}
        >Request Care</motion.button>
     </div>
 

@@ -3,7 +3,7 @@ import heroimg from "../assets/hero-img1.png";
 import img from "../assets/heroimg2.jpg";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import img2 from "../assets/whyheroimg.jpg";
 function WhyHero(){
 
@@ -166,7 +166,7 @@ function WhyHero(){
 
      const [open, setOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
-
+const navigate = useNavigate();
 useEffect(() => {
   const handleScroll = () => {
     setScrolled(window.scrollY > 20);
@@ -336,6 +336,7 @@ People Who Truly Care.
     rotate: [0, -4, 4, -4, 4, 0],
   }}
   style={{ transformOrigin: "center center" }}
+   onClick={() => navigate("/contact")}
         >
          Experience the HiCARES Difference →
         </motion.button>

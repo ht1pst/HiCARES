@@ -1,5 +1,6 @@
 import logo from "../assets/logonew.png";
 import email from "../assets/icon_email.svg";
+import { Link } from "react-router-dom";
 function Footer(){
     return(
 <section className="lg:px-20 bg-[#F8FAFC] #e2dbdb px-[20px] h-auto lg:pb-10  pt-10"
@@ -51,21 +52,21 @@ dignity, and peace of mind.
 <div className="flex flex-col gap-2">
     <h1 className="text-[#1E3A5F] text-[20px] font-bold ">Company</h1>
     <div className="border border-l-0 border-r-0 border-t-0 text-gray-300"></div>
-    <a href="#" className="text-[#475569] hover:text-[#2EC4B6] transition-colors duration-300">Home</a>
-    <a href="#" className="text-[#475569] hover:text-[#2EC4B6] transition-colors duration-300">About</a>
-    <a href="#" className="text-[#475569] hover:text-[#2EC4B6] transition-colors duration-300">Services</a>
-    <a href="#" className="text-[#475569] hover:text-[#2EC4B6] transition-colors duration-300">Careers</a>
-    <a href="#" className="text-[#475569] hover:text-[#2EC4B6] transition-colors duration-300">Contact</a>
+   <Link to="/" className="text-[#475569] hover:text-[#2EC4B6] transition-colors duration-300">Home</Link>
+<Link to="/about" className="text-[#475569] hover:text-[#2EC4B6] transition-colors duration-300">About</Link>
+<Link to="/services" className="text-[#475569] hover:text-[#2EC4B6] transition-colors duration-300">Services</Link>
+<Link to="/careers" className="text-[#475569] hover:text-[#2EC4B6] transition-colors duration-300">Careers</Link>
+<Link to="/contact" className="text-[#475569] hover:text-[#2EC4B6] transition-colors duration-300">Contact</Link>
 </div>
 
 <div className="flex flex-col gap-2">
     <h1 className="text-[#1E3A5F] text-[20px] font-bold ">Company</h1>
     <div className="border border-l-0 border-r-0 border-t-0 text-gray-300"></div>
-    <a href="#" className="text-[#475569] hover:text-[#2EC4B6] transition-colors duration-300">Personal Care</a>
-    <a href="#" className="text-[#475569] hover:text-[#2EC4B6] transition-colors duration-300">Home Health</a>
-    <a href="#" className="text-[#475569] hover:text-[#2EC4B6] transition-colors duration-300">Skilled Nursing</a>
-    <a href="#" className="text-[#475569] hover:text-[#2EC4B6] transition-colors duration-300">Companion Care</a>
-    <a href="#" className="text-[#475569] hover:text-[#2EC4B6] transition-colors duration-300">Respite Care</a>
+   <Link to="/personalizedcare" className="text-[#475569] hover:text-[#2EC4B6] transition-colors duration-300">Personal Care</Link>
+<Link to="/homehealth" className="text-[#475569] hover:text-[#2EC4B6] transition-colors duration-300">Home Health</Link>
+<Link to="/skillednursing" className="text-[#475569] hover:text-[#2EC4B6] transition-colors duration-300">Skilled Nursing</Link>
+<Link to="/companioncare" className="text-[#475569] hover:text-[#2EC4B6] transition-colors duration-300">Companion Care</Link>
+<Link to="/respitecare" className="text-[#475569] hover:text-[#2EC4B6] transition-colors duration-300">Respite Care</Link>
 </div>
 
 
@@ -75,7 +76,7 @@ dignity, and peace of mind.
     <a href="#" className="text-[#475569] hover:text-[#2EC4B6] transition-colors duration-300 w-[200px] font-bold">819 30th Ave South, Suite 200D
 Moorhead, MN 56560</a>
     <a href="#" className="text-[#475569] hover:text-[#2EC4B6] transition-colors duration-300">info@hicaresservices.com</a>
-    <a href="#" className="text-[#475569] hover:text-[#2EC4B6] transition-colors duration-300">1234567890</a>
+    <a href="#" className="text-[#475569] hover:text-[#2EC4B6] transition-colors duration-300">+1 832-863-0858</a>
 </div>
 
     </div>

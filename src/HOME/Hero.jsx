@@ -3,22 +3,23 @@ import heroimg from "../assets/hero-img1.png";
 import img from "../assets/heroimg2.jpg";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-router-dom";
-function Hero(){
-    const [open, setOpen] = useState(false);
-    const [scrolled, setScrolled] = useState(false);
+import { Link, useNavigate } from "react-router-dom";
 
-useEffect(() => {
-  const handleScroll = () => {
-    setScrolled(window.scrollY > 20);
-  };
+function Hero() {
+  const navigate = useNavigate();
+  const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
 
-  window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-  return () => window.removeEventListener("scroll", handleScroll);
-}, []);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 return(
-<section className="h-screen pb-10 ">
+<section className="lg:h-screen pb-10 h-auto ">
     <div>
         
 <header  className={`
@@ -48,9 +49,12 @@ return(
       </nav>
 
       {/* Desktop Button */}
-      <button className="hidden lg:block bg-[#1E3A5F] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#2EC4B6] transition">
-        Get Appointment
-      </button>
+      <Link to="/contact" className="hidden lg:block bg-[#1E3A5F] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#2EC4B6] transition">
+       Get Appointment
+      </Link>
+
+
+      
 
       {/* Mobile Menu Button */}
       <button
@@ -108,9 +112,12 @@ return(
         <Link to="/contact" onClick={() => setOpen(false)}>Contact Us</Link>
               </nav>
 
-              <button className="mt-10 w-full bg-[#1E3A5F] text-white py-3 rounded-xl font-semibold hover:bg-[#2EC4B6] transition">
-                Get Appointment
-              </button>
+
+
+<div className="mt-10 w-full bg-[#1E3A5F] text-white py-3 rounded-xl flex justify-center font-semibold hover:bg-[#2EC4B6] transition">
+ <Link to="/contact" onClick={() => setOpen(false)}>Get Appointment</Link>
+</div>
+             
             </motion.div>
           </>
         )}
@@ -178,8 +185,9 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
 
 
 <div className="flex lg:flex-row flex-col lg:gap-2 gap-6 mt-5">
-    <motion.button className="bg-[#1E3A5F] text-white lg:w-[180px] w-full h-[45px] rounded-xl font-bold lg:mx-0 mx-auto"
-    initial={{ opacity: 0, y: 40, rotate: 0 }}
+  <motion.button
+  className="bg-[#1E3A5F] text-white lg:w-[180px] w-full h-[45px] rounded-xl font-bold lg:mx-0 mx-auto"
+  initial={{ opacity: 0, y: 40, rotate: 0 }}
   whileInView={{ opacity: 1, y: 0 }}
   viewport={{ once: true, amount: 0.3 }}
   transition={{
@@ -191,8 +199,10 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
     rotate: [0, -4, 4, -4, 4, 0],
   }}
   style={{ transformOrigin: "center center" }}
-    >Request Care</motion.button>
-
+  onClick={() => navigate("/contact")}
+>
+  Request Care
+</motion.button>
 
     <motion.button className="bg-white text-#1E3A5F border border-[#1E3A5F] lg:w-[180px] w-full h-[40px] rounded-xl font-bold lg:mx-0 mx-auto"
      initial={{ opacity: 0, y: 40, rotate: 0 }}
@@ -207,7 +217,7 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
     rotate: [0, -4, 4, -4, 4, 0],
   }}
   style={{ transformOrigin: "center center" }}
-
+onClick={() => navigate("/referral")}
     >Refer a Client</motion.button>
 </div>
 </div>

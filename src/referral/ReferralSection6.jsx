@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 function ReferralSection6(){
     return(
-<section className="relative py-20 px-6 bg-[#F7FAF8] overflow-hidden">
+<section id="form" className="relative py-20 px-6 bg-[#F7FAF8] overflow-hidden">
   <div className="max-w-7xl mx-auto">
 
     {/* Section Header */}

@@ -5,7 +5,9 @@ import img3 from "../assets/protection.png";
 import clock from "../assets/clock.png";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link, useNavigate } from "react-router-dom";
 function Section2() {
+   const navigate = useNavigate();
   return (
     <section className="h-auto pb-10 lg:pt-20 px-[20px]">
       <div className="flex flex-col flex-col-reverse lg:flex-row relative justify-center lg:items-center lg:gap-25 gap-10">
@@ -198,6 +200,7 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
     },
   }}
   style={{ transformOrigin: "center center" }}
+  onClick={() => navigate("/about")}
 >
   About Us
 </motion.button>

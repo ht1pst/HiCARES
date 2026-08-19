@@ -3,11 +3,12 @@ import heroimg from "../assets/hero-img1.png";
 import img from "../assets/heroimg2.jpg";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import img2 from "../assets/homemakerheroimg.webp";
 function HomeMakerHero(){
      const [open, setOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const navigate = useNavigate();
 
 useEffect(() => {
   const handleScroll = () => {
@@ -179,6 +180,7 @@ promoting independence, peace of mind, and a healthier living environment.
     rotate: [0, -4, 4, -4, 4, 0],
   }}
   style={{ transformOrigin: "center center" }}
+  onClick={() => navigate("/contact")}
         >
           Request Care
         </motion.button>
@@ -196,6 +198,7 @@ promoting independence, peace of mind, and a healthier living environment.
     rotate: [0, -4, 4, -4, 4, 0],
   }}
   style={{ transformOrigin: "center center" }}
+  onClick={() => navigate("/contact")}
         >
           Contact Us
         </motion.button>

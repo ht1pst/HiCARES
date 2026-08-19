@@ -1,8 +1,9 @@
 import img from "../assets/ctaimg.jpg";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link, useNavigate } from "react-router-dom";
 function Section82(){
-
+const navigate = useNavigate();
     return(
 <section className="hidden lg:block">
 
@@ -43,6 +44,7 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
     },
   }}
   style={{ transformOrigin: "center center" }}
+  onClick={() => navigate("/about")}
  >Request Care</motion.button>
 
 

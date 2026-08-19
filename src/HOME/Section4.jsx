@@ -5,7 +5,9 @@ import customer from "../assets/customer.png";
 import img from "../assets/section4img.jpg";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link, useNavigate } from "react-router-dom";
 function Section4(){
+    const navigate = useNavigate();
     return(
         <section className="h-auto pb-10 lg:pt-20 pt-10 bg-[#F5F9FA] px-[20px]">
 
@@ -65,6 +67,7 @@ function Section4(){
     },
   }}
   style={{ transformOrigin: "center center" }}
+    onClick={() => navigate("/why")}
        >Learn More</motion.button>
 
     </div>
