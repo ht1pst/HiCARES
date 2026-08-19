@@ -50,9 +50,12 @@ useEffect(() => {
       </nav>
 
       {/* Desktop Button */}
-      <button className="hidden lg:block bg-[#1E3A5F] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#2EC4B6] transition">
-        Get Appointment
-      </button>
+      <Link to="/contact" className="hidden lg:block bg-[#1E3A5F] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#2EC4B6] transition">
+       Get Appointment
+      </Link>
+
+
+      
 
       {/* Mobile Menu Button */}
       <button
@@ -110,9 +113,12 @@ useEffect(() => {
         <Link to="/contact" onClick={() => setOpen(false)}>Contact Us</Link>
               </nav>
 
-              <button className="mt-10 w-full bg-[#1E3A5F] text-white py-3 rounded-xl font-semibold hover:bg-[#2EC4B6] transition">
-                Get Appointment
-              </button>
+
+
+<div className="mt-10 w-full bg-[#1E3A5F] text-white py-3 rounded-xl flex justify-center font-semibold hover:bg-[#2EC4B6] transition">
+ <Link to="/contact" onClick={() => setOpen(false)}>Get Appointment</Link>
+</div>
+             
             </motion.div>
           </>
         )}
