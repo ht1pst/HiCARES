@@ -1,6 +1,53 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { supabase } from "../lib/supabase";
 function ReferralSection6(){
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(e.target);
+
+  const referralData = {
+    referrer_name: formData.get("referrer_name"),
+    referrer_email: formData.get("referrer_email"),
+    referrer_phone: formData.get("referrer_phone"),
+    client_name: formData.get("client_name"),
+    client_phone: formData.get("client_phone"),
+    client_email: formData.get("client_email"),
+    relationship: formData.get("relationship"),
+    service_needed: formData.get("service_needed"),
+    message: formData.get("message"),
+    consent_given: formData.get("consent_given") === "on",
+  };
+
+  // Save referral to Supabase
+  const { error } = await supabase
+    .from("Referrals")
+    .insert([referralData]);
+
+  if (error) {
+    console.error("Error submitting referral:", error);
+    alert("Something went wrong. Please try again.");
+    return;
+  }
+
+  // Send email notification
+  const { data: emailData, error: emailError } =
+    await supabase.functions.invoke("smooth-handler", {
+      body: referralData,
+    });
+
+  if (emailError) {
+    console.error("Email notification error:", emailError);
+    alert("Referral submitted, but the email notification could not be sent.");
+    return;
+  }
+
+  console.log("Email sent:", emailData);
+
+  alert("Referral submitted successfully!");
+  e.target.reset();
+};
     return(
 <section id="form" className="relative py-20 px-6 bg-[#F7FAF8] overflow-hidden">
   <div className="max-w-7xl mx-auto">
@@ -122,7 +169,7 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
           </p>
         </div>
 
-        <form className="space-y-6">
+        <form onSubmit={handleSubmit} className="space-y-6">
 
           {/* Referrer Information */}
           <div>
@@ -140,6 +187,7 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
                 <input
                   type="text"
                   placeholder="Enter your name"
+                  name="referrer_name"
                   className="
                     w-full px-4 py-3 rounded-xl border border-[#D9E3DE]
                     outline-none text-sm text-[#1E3A5F]
@@ -159,6 +207,7 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
                 <input
                   type="email"
                   placeholder="Enter your email"
+                  name="referrer_email"
                   className="
                     w-full px-4 py-3 rounded-xl border border-[#D9E3DE]
                     outline-none text-sm text-[#1E3A5F]
@@ -178,6 +227,7 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
                 <input
                   type="tel"
                   placeholder="Enter your phone number"
+                  name="referrer_phone"
                   className="
                     w-full px-4 py-3 rounded-xl border border-[#D9E3DE]
                     outline-none text-sm text-[#1E3A5F]
@@ -208,6 +258,7 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
                 <input
                   type="text"
                   placeholder="Enter their full name"
+                  name="client_name"
                   className="
                     w-full px-4 py-3 rounded-xl border border-[#D9E3DE]
                     outline-none text-sm text-[#1E3A5F]
@@ -227,6 +278,7 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
                 <input
                   type="tel"
                   placeholder="Enter their phone number"
+                  name="client_phone"
                   className="
                     w-full px-4 py-3 rounded-xl border border-[#D9E3DE]
                     outline-none text-sm text-[#1E3A5F]
@@ -246,6 +298,7 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
                 <input
                   type="email"
                   placeholder="Enter their email"
+                  name="client_email"
                   className="
                     w-full px-4 py-3 rounded-xl border border-[#D9E3DE]
                     outline-none text-sm text-[#1E3A5F]
@@ -258,27 +311,28 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-[#374151] mb-2">
-                  Relationship to You
-                </label>
+      <label className="block text-sm font-medium text-[#374151] mb-2">
+  Relationship to You
+</label>
 
-                <select
-                  className="
-                    w-full px-4 py-3 rounded-xl border border-[#D9E3DE]
-                    outline-none text-sm text-[#1E3A5F]
-                    bg-white
-                    focus:border-[#2EC4B6]
-                    focus:ring-2 focus:ring-[#2EC4B6]/10
-                    transition
-                  "
-                >
-                  <option value="">Select relationship</option>
-                  <option>Family Member</option>
-                  <option>Friend</option>
-                  <option>Colleague</option>
-                  <option>Healthcare Professional</option>
-                  <option>Other</option>
-                </select>
+<select
+  name="relationship"
+  className="
+    w-full px-4 py-3 rounded-xl border border-[#D9E3DE]
+    outline-none text-sm text-[#1E3A5F]
+    bg-white
+    focus:border-[#2EC4B6]
+    focus:ring-2 focus:ring-[#2EC4B6]/10
+    transition
+  "
+>
+  <option value="">Select relationship</option>
+  <option value="Family Member">Family Member</option>
+  <option value="Friend">Friend</option>
+  <option value="Colleague">Colleague</option>
+  <option value="Healthcare Professional">Healthcare Professional</option>
+  <option value="Other">Other</option>
+</select>
               </div>
 
             </div>
@@ -293,47 +347,50 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
             <div className="space-y-5">
 
               <div>
-                <label className="block text-sm font-medium text-[#374151] mb-2">
-                  What Type of Support May They Need?
-                </label>
 
-                <select
-                  className="
-                    w-full px-4 py-3 rounded-xl border border-[#D9E3DE]
-                    outline-none text-sm text-[#1E3A5F]
-                    bg-white
-                    focus:border-[#2EC4B6]
-                    focus:ring-2 focus:ring-[#2EC4B6]/10
-                    transition
-                  "
-                >
-                  <option value="">Select a service</option>
-                  <option>Personal Care</option>
-                  <option>Companion Care</option>
-                  <option>Respite Care</option>
-                  <option>Medication Support</option>
-                  <option>Daily Living Support</option>
-                  <option>Other</option>
-                </select>
+               <label className="block text-sm font-medium text-[#374151] mb-2">
+  What Type of Support May They Need?
+</label>
+
+<select
+  name="service_needed"
+  className="
+    w-full px-4 py-3 rounded-xl border border-[#D9E3DE]
+    outline-none text-sm text-[#1E3A5F]
+    bg-white
+    focus:border-[#2EC4B6]
+    focus:ring-2 focus:ring-[#2EC4B6]/10
+    transition
+  "
+>
+  <option value="">Select a service</option>
+  <option value="Personal Care">Personal Care</option>
+  <option value="Companion Care">Companion Care</option>
+  <option value="Respite Care">Respite Care</option>
+  <option value="Medication Support">Medication Support</option>
+  <option value="Daily Living Support">Daily Living Support</option>
+  <option value="Other">Other</option>
+</select>
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-[#374151] mb-2">
-                  Tell Us More
-                </label>
+              <label className="block text-sm font-medium text-[#374151] mb-2">
+  Tell Us More
+</label>
 
-                <textarea
-                  rows="5"
-                  placeholder="Please share any helpful information about their care needs..."
-                  className="
-                    w-full px-4 py-3 rounded-xl border border-[#D9E3DE]
-                    outline-none resize-none text-sm text-[#1E3A5F]
-                    placeholder:text-[#9CA3AF]
-                    focus:border-[#2EC4B6]
-                    focus:ring-2 focus:ring-[#2EC4B6]/10
-                    transition
-                  "
-                ></textarea>
+<textarea
+  name="message"
+  rows="5"
+  placeholder="Please share any helpful information about their care needs..."
+  className="
+    w-full px-4 py-3 rounded-xl border border-[#D9E3DE]
+    outline-none resize-none text-sm text-[#1E3A5F]
+    placeholder:text-[#9CA3AF]
+    focus:border-[#2EC4B6]
+    focus:ring-2 focus:ring-[#2EC4B6]/10
+    transition
+  "
+></textarea>
               </div>
 
             </div>
@@ -345,6 +402,7 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
               <input
                 type="checkbox"
                 className="mt-1 w-4 h-4 accent-[#2EC4B6]"
+                name="consent_given"
               />
 
               <span className="text-[13px] text-[#6B7280] leading-5">
