@@ -2,8 +2,122 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useNavigate } from "react-router-dom";
 import img from "../assets/careersection4img.webp";
+import { supabase } from "../lib/supabase";
 function CareersSection4(){
   const navigate = useNavigate();
+ const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const form = e.target;
+  const formData = new FormData(form);
+
+  const firstName = formData.get("first_name");
+  const lastName = formData.get("last_name");
+  const email = formData.get("email");
+  const phone = formData.get("phone");
+  const position = formData.get("position");
+  const employmentType = formData.get("employment_type");
+  const experience = formData.get("experience");
+  const resumeFile = formData.get("resume");
+  const about = formData.get("about");
+  const additionalInformation = formData.get("additional_information");
+  const agreement = formData.get("agreement") === "on";
+
+  if (!resumeFile || resumeFile.size === 0) {
+    alert("Please upload your résumé.");
+    return;
+  }
+
+  if (!agreement) {
+    alert("Please confirm that the information provided is accurate.");
+    return;
+  }
+
+  try {
+    // 1. Create unique file name
+    const fileName = `${Date.now()}-${resumeFile.name}`;
+
+    // 2. Upload résumé ONCE
+    const { error: uploadError } = await supabase.storage
+      .from("resumes")
+      .upload(fileName, resumeFile);
+
+    if (uploadError) {
+      console.error(uploadError);
+      alert("There was a problem uploading your résumé.");
+      return;
+    }
+
+    // 3. Get résumé URL
+    const { data: resumeData } = supabase.storage
+      .from("resumes")
+      .getPublicUrl(fileName);
+
+    const resumeUrl = resumeData.publicUrl;
+
+    // 4. Save application
+    const { error: insertError } = await supabase
+      .from("Careers")
+      .insert([
+        {
+          first_name: firstName,
+          last_name: lastName,
+          email: email,
+          phone: phone,
+          position: position,
+          employment_type: employmentType,
+          experience: experience,
+          resume_url: resumeUrl,
+          about: about,
+          additional_information: additionalInformation,
+          agreement: agreement,
+        },
+      ]);
+
+    if (insertError) {
+      console.error(insertError);
+      alert("Your application could not be submitted.");
+      return;
+    }
+
+    // 5. Send email
+    const { error: emailError } = await supabase.functions.invoke(
+      "send-career-email",
+      {
+        body: {
+          first_name: firstName,
+          last_name: lastName,
+          email: email,
+          phone: phone,
+          position: position,
+          employment_type: employmentType,
+          experience: experience,
+          resume_url: resumeUrl,
+          about: about,
+          additional_information: additionalInformation,
+          agreement: agreement,
+        },
+      }
+    );
+
+    if (emailError) {
+      console.error("Email error:", emailError);
+      alert(
+        "Your application was submitted, but we couldn't send the email notification."
+      );
+      return;
+    }
+
+    alert("Application submitted successfully!");
+
+    form.reset();
+
+  } catch (error) {
+    console.error(error);
+    alert("Something went wrong. Please try again.");
+  }
+};
+
   const whyChooseUs = [
   {
     title: "Personalized  Care Plans",
@@ -359,7 +473,9 @@ return(
 
     {/* Form */}
     
-    <motion.form  className="bg-white rounded-[30px] shadow-sm border border-gray-100 p-6 lg:p-10"
+    <motion.form
+    onSubmit={handleSubmit} 
+    className="bg-white rounded-[30px] shadow-sm border border-gray-100 p-6 lg:p-10"
     initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
   viewport={{ once: true, amount: 0.3 }} // animate only the first time
@@ -376,6 +492,7 @@ return(
 
           <input
             type="text"
+            name="first_name"
             className="w-full border border-gray-200 rounded-xl px-4 py-3 outline-none focus:border-[#2EC4B6] transition"
             placeholder="Enter your first name"
           />
@@ -389,6 +506,7 @@ return(
 
           <input
             type="text"
+            name="last_name"
             className="w-full border border-gray-200 rounded-xl px-4 py-3 outline-none focus:border-[#2EC4B6] transition"
             placeholder="Enter your last name"
           />
@@ -402,6 +520,7 @@ return(
 
           <input
             type="email"
+              name="email"
             className="w-full border border-gray-200 rounded-xl px-4 py-3 outline-none focus:border-[#2EC4B6] transition"
             placeholder="you@example.com"
           />
@@ -415,6 +534,7 @@ return(
 
           <input
             type="tel"
+            name="phone"
             className="w-full border border-gray-200 rounded-xl px-4 py-3 outline-none focus:border-[#2EC4B6] transition"
             placeholder="Enter your phone number"
           />
@@ -427,6 +547,7 @@ return(
           </label>
 
           <select
+          name="position"
             className="w-full border border-gray-200 rounded-xl px-4 py-3 bg-white outline-none focus:border-[#2EC4B6] transition"
           >
             <option value="">Select a position</option>
@@ -447,6 +568,7 @@ return(
           </label>
 
           <select
+          name="employment_type"
             className="w-full border border-gray-200 rounded-xl px-4 py-3 bg-white outline-none focus:border-[#2EC4B6] transition"
           >
             <option value="">Select employment type</option>
@@ -464,6 +586,7 @@ return(
 
           <input
             type="text"
+             name="experience"
             className="w-full border border-gray-200 rounded-xl px-4 py-3 outline-none focus:border-[#2EC4B6] transition"
             placeholder="e.g. 2 years"
           />
@@ -476,6 +599,7 @@ return(
           </label>
 
           <input
+           name="resume"
             type="file"
             accept=".pdf,.doc,.docx"
             className="w-full border border-gray-200 rounded-xl px-4 py-3 bg-white"
@@ -492,6 +616,7 @@ return(
 
         <textarea
           rows="5"
+          name="about"
           className="w-full border border-gray-200 rounded-xl px-4 py-3 outline-none focus:border-[#2EC4B6] transition resize-none"
           placeholder="Tell us why you would like to join HiCARES..."
         />
@@ -505,6 +630,7 @@ return(
 
         <textarea
           rows="4"
+          name="additional_information"
           className="w-full border border-gray-200 rounded-xl px-4 py-3 outline-none focus:border-[#2EC4B6] transition resize-none"
           placeholder="Anything else you'd like us to know?"
         />
@@ -514,6 +640,7 @@ return(
       <label className="flex items-start gap-3 mt-6 text-gray-600 text-sm">
         <input
           type="checkbox"
+           name="agreement"
           className="mt-1 accent-[#2EC4B6]"
         />
 
@@ -532,6 +659,7 @@ return(
         </button>
       </div>
 
+    
     </motion.form>
 
   </div>
