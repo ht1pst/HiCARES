@@ -4,9 +4,9 @@ import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import img1 from "../assets/team-img1.jpg";
-import img2 from "../assets/team-img2.jpg";
-import img3 from "../assets/team-img3.jpg";
+import img1 from "../assets/team-img1.webp";
+import img2 from "../assets/team-img2.webp";
+import img3 from "../assets/team-img3.webp";
 
 function Section6() {
   const cards = [

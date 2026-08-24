@@ -1,8 +1,8 @@
-import hour from "../assets/24.png";
-import clockk from "../assets/clock2.png";
-import doctor from "../assets/doctor.png";
-import customer from "../assets/customer.png";
-import img from "../assets/section4img.jpg";
+import hour from "../assets/24.webp";
+import clockk from "../assets/clock2.webp";
+import doctor from "../assets/doctor.webp";
+import customer from "../assets/customer.webp";
+import img from "../assets/section4img.webp";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useNavigate } from "react-router-dom";

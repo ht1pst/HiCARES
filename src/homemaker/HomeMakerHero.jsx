@@ -1,6 +1,6 @@
-import logo from "../assets/logonew.png";
-import heroimg from "../assets/hero-img1.png";
-import img from "../assets/heroimg2.jpg";
+import logo from "../assets/logonew.webp";
+import heroimg from "../assets/hero-img1.webp";
+import img from "../assets/heroimg2.webp";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useNavigate } from "react-router-dom";

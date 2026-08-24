@@ -1,10 +1,10 @@
-import img from "../assets/servicesec3img.jpg";
+import img from "../assets/servicesec3img.webp";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import hour from "../assets/24.png";
-import clockk from "../assets/clock2.png";
-import doctor from "../assets/doctor.png";
-import customer from "../assets/customer.png";
+import hour from "../assets/24.webp";
+import clockk from "../assets/clock2.webp";
+import doctor from "../assets/doctor.webp";
+import customer from "../assets/customer.webp";
 
 function ServicesSection3(){
     return(

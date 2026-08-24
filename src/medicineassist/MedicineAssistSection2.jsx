@@ -1,4 +1,4 @@
-import overviewImg from "../assets/medicineassistsec2img.jpg";
+import overviewImg from "../assets/medicineassistsec2img.webp";
 import { motion } from "framer-motion";
 function MedicineAssistSection2(){
 const features = [

@@ -1,4 +1,4 @@
-import img from "../assets/faqimg.jpg";
+import img from "../assets/faqimg.webp";
 import React, { useState } from "react";
 
 import { motion, AnimatePresence } from "framer-motion";

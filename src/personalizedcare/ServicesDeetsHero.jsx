@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useNavigate } from "react-router-dom";
-import logo from "../assets/logonew.png";
+import logo from "../assets/logonew.webp";
 import img2 from "../assets/servicedeets1img.webp";
 
 function ServicesDeetsHero() {

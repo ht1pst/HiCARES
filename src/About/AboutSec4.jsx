@@ -1,7 +1,7 @@
 import AboutSec3 from "./AboutSec3"
 import { motion } from "framer-motion";
-import quality from "../assets/star.png";
-import phunk from "../assets/phunksc.png";
+import quality from "../assets/star.webp";
+import phunk from "../assets/phunksc.webp";
 import partner from "../assets/partner2.webp";
 
 function AboutSec4(){

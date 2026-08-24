@@ -1,4 +1,4 @@
-import overviewImg from "../assets/transportsection2img.jpg";
+import overviewImg from "../assets/transportsection2img.webp";
 import { motion } from "framer-motion";
 function TransportSection2(){
 const features = [

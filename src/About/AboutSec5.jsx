@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
-import img from "../assets/aboutsec5img.jpg";
+import img from "../assets/aboutsec5img.webp";
 import { useEffect, useState } from "react";
 function AboutSec5(){
     return(

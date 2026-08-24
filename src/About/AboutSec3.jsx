@@ -1,9 +1,9 @@
-import logo from "../assets/logonew.png";
-import heroimg from "../assets/hero-img1.png";
+import logo from "../assets/logonew.webp";
+import heroimg from "../assets/hero-img1.webp";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import img from "../assets/aboutsec3img.jpg";
+import img from "../assets/aboutsec3img.webp";
 function AboutSec3(){
 const [open, setOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);

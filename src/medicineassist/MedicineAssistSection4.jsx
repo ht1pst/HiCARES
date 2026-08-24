@@ -1,4 +1,4 @@
-import img from "../assets/ctaimg.jpg";
+import img from "../assets/ctaimg.webp";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 function MedicineAssistSection5(){

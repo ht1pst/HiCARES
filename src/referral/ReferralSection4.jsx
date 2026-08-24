@@ -1,7 +1,7 @@
-import img1 from "../assets/Referralsection4img1.jpg";
-import img2 from "../assets/Referralsection4img2.jpg";
-import img3 from "../assets/Referralsection4img3.jpg";
-import img4 from "../assets/Referralsection4img4.jpg";
+import img1 from "../assets/Referralsection4img1.webp";
+import img2 from "../assets/Referralsection4img2.webp";
+import img3 from "../assets/Referralsection4img3.webp";
+import img4 from "../assets/Referralsection4img4.webp";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 function ReferralSection4(){

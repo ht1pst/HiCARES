@@ -2,10 +2,10 @@ import img2 from "../assets/referralherobg.avif";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-import logo from "../assets/logonew.png";
-import heroimg from "../assets/hero-img1.png";
+import logo from "../assets/logonew.webp";
+import heroimg from "../assets/hero-img1.webp";
 import img from "../assets/heroimg2.jpg";
-import img3 from "../assets/referalheroimg3.png";
+import img3 from "../assets/referalheroimg3.webp";
 function ReferralHero(){
   const [open, setOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);

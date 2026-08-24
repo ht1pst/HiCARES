@@ -1,8 +1,8 @@
 import img from "../assets/careerssection2img.webp";
-import img4 from "../assets/team-img1.jpg";
-import img2 from "../assets/healthcare.png";
-import img3 from "../assets/protection.png";
-import clock from "../assets/clock.png";
+import img4 from "../assets/team-img1.webp";
+import img2 from "../assets/healthcare.webp";
+import img3 from "../assets/protection.webp";
+import clock from "../assets/clock.webp";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 function CareersSection2() {
