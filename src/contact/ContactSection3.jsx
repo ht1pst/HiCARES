@@ -27,7 +27,7 @@ return(
       {/* Button */}
       <div className="mt-8">
          <a
-  href="https://calendly.com/hicares"
+  href="https://calendly.com/hicaresservices-info/30min"
   target="_blank"
   rel="noopener noreferrer"
   className="inline-flex items-center justify-center bg-[#1E3A5F] hover:bg-[#2EC4B6] text-white font-semibold px-8 py-4 rounded-xl transition duration-300"

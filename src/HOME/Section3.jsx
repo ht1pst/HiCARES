@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 function Section3(){
   const navigate = useNavigate();
     return(
-<section className="lg:px-[70px] px-[20px] h-auto pb-10 lg:pt-20 pt-5">
+<section className="lg:px-[70px] px-[20px] h-auto pb-10 lg:pt-20 pt-5 max-w-[1550px] mx-auto">
     <div>
 
         <motion.div className="flex items-center gap-3 border border-gray-300 w-[120px] py-[5px] justify-center rounded-3xl font-semibold "

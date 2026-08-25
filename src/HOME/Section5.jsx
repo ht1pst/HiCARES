@@ -7,7 +7,7 @@ function Section5(){
   const navigate = useNavigate();
 return(
 
-    <section className="relative px-[20px]">
+    <section className="relative px-[20px] ">
 
 
         <div className="absolute  block top-90 left-0 w-30 h-80 bg-[#aefdec] #aefdec rounded-full blur-[120px] opacity-70"></div>

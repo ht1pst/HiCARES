@@ -1,5 +1,5 @@
-import img from "../assets/aboutsec2img1.jpg";
-import img2 from "../assets/aboutsec2img2.jpg";
+import img from "../assets/aboutsec2img1.webp";
+import img2 from "../assets/aboutsec2img2.webp";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 function AboutSec2(){

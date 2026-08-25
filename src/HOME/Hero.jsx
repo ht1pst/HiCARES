@@ -128,7 +128,7 @@ return(
 
 
   <div
-  className="relative flex lg:px-[50px] lg:items-center pt-[100px] bg-cover bg-center bg-no-repeat px-[20px]"
+  className="relative flex lg:px-[50px] lg:items-center pt-[100px] bg-cover bg-center bg-no-repeat px-[20px] "
   style={{
     backgroundImage: `linear-gradient(rgba(30, 58, 95, 0.7), rgba(30, 58, 95, 0.7)), url(${img})`,
     backgroundSize: "cover",
@@ -140,10 +140,10 @@ return(
   
 
 >
-<div className="pt-10">
+<div className="pt-10 max-w-[1400px] xl:px-80">
 
 
-<motion.div className="flex items-center gap-3 border border-gray-100 w-[200px] lg:py-[5px] justify-center rounded-3xl font-semibold "
+<motion.div className="flex items-center gap-3 border border-gray-100 w-[200px] lg:py-[5px]  justify-center rounded-3xl font-semibold "
 initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
   viewport={{ once: true, amount: 0.3 }} // animate only the first time

@@ -3,11 +3,11 @@ import email from "../assets/icon_email.svg";
 import { Link } from "react-router-dom";
 function Footer(){
     return(
-<section className="lg:px-20 bg-[#F8FAFC] #e2dbdb px-[20px] h-auto lg:pb-10  pt-10"
+<section className="lg:px-20 bg-[#F8FAFC] #e2dbdb px-[20px] h-auto lg:pb-10  pt-10 w-full  "
 
 >
 
-    <div className="flex flex-col lg:flex-row justify-between items-center  ">
+    <div className="flex flex-col lg:flex-row justify-between items-center max-w-[1550px] mx-auto">
 <h1 className="lg:text-[50px] text-[32px] leading-tight font-semibold text-black flex justify-center"> Subscribe for daily update</h1>
   <div className="flex items-center relaive">
 
@@ -25,7 +25,7 @@ function Footer(){
   
    </div>
 </div>
-    <div className="flex lg:flex-row flex-col  gap-10 lg:justify-between mt-10">
+    <div className="flex lg:flex-row flex-col  gap-10 lg:justify-between mt-10 max-w-[1550px] mx-auto">
 
 <div>
     <img src={logo} alt="" className="w-[200px] rounded-xl ml-[-40px] overflow-hidden" />
@@ -81,9 +81,9 @@ Moorhead, MN 56560</a>
 
     </div>
 
-<div className="border border-l-0 border-r-0 border-t-0 text-gray-300 mt-10"></div>
+<div className="border border-l-0 border-r-0 border-t-0 text-gray-300 mt-10 max-w-[1550px] mx-auto"></div>
 
-    <div className="flex flex-col lg:flex-row lg:justify-between items-center mt-5">
+    <div className="flex flex-col lg:flex-row lg:justify-between items-center mt-5 max-w-[1550px] mx-auto">
  <div className="mt-5"><p className="text-[16px] text-[#475569] font-bold   px-10 lg:px-0  text-center">Copyright © 2026 HiCARES, All rights reserved.</p></div>
 
  <div className="flex gap-2 items-center justify-center lg:justify-start mt-4 lg:mt-0">

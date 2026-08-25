@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 function ServicesSection2(){
     return(
-<section className="lg:px-[165px] px-[20px] h-auto pb-10 lg:pt-20 pt-5">
+<section className="lg:px-[165px] px-[20px] h-auto pb-10 lg:pt-20 pt-5 max-w-[1700px] mx-auto">
 
 <div className="flex gap-5 justify-between flex-col lg:flex-row  mt-10">
 

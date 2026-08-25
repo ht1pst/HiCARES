@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 function ReferralSection3(){
     return(
-        <section className="h-auto pb-10 px-[20px]">
+        <section className="h-auto pb-10 px-[20px] max-w-[1500px] mx-auto ">
              <div className="flex flex-col justify-center items-center">
                 <motion.h1 className=" mt-4 text-[#1E3A5F] text-[30px] lg:text-4xl font-bold leading-[40px] text-center "
                 initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible

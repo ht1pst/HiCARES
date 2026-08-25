@@ -9,7 +9,7 @@ import { Link, useNavigate } from "react-router-dom";
 function Section4(){
     const navigate = useNavigate();
     return(
-        <section className="h-auto pb-10 lg:pt-20 pt-10 bg-[#F5F9FA] px-[20px]">
+        <section className="h-auto pb-10 lg:pt-20 pt-10 bg-[#F5F9FA] px-[20px] ">
 
 <div className="flex flex-col lg:flex-row justify-center gap-15 items-center">
 
@@ -86,7 +86,7 @@ function Section4(){
 </div>
 
 
-<div className="flex flex-col lg:flex-row justify-center gap-5 mt-20">
+<div className="flex flex-col lg:flex-row justify-center gap-5 mt-20 max-w-[1550px] mx-auto">
 
 <motion.div className="flex flex-col px-[20px] rounded-xl py-[30px] justify-center bg-[#DFF7F2] lg:w-[320px] mx-auto"
  initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible

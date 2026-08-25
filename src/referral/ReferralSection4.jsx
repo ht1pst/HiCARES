@@ -6,11 +6,13 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 function ReferralSection4(){
     return(
-<section className="h-auto pb-10 lg:px-[30px] py-[10px]">
+<section className="h-auto pb-10 lg:px-[30px] py-[10px] ">
 
     <div
-    className="bg-[#F7FAF8] #f3f3f3 px-[20px] lg:px-0 rounded-xl py-[30px]"
+    className="bg-[#F7FAF8] #f3f3f3 px-[20px] lg:px-0 rounded-xl py-[30px] "
     >
+
+        <div className="max-w-[1500px] mx-auto">
 <motion.h1 className=" mt-4 text-[#1E3A5F] text-[30px] text-center lg:text-4xl font-bold "
  initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
@@ -84,7 +86,7 @@ function ReferralSection4(){
 <h1 className="text-[#1E3A5F] text-[25px]  font-bold ">Friends & Caregivers</h1>
 <p className="mx-auto w-[90%] mt-3 text-center">If you know someone who needs extra support at home, you can help them take the first step toward care.</p>
 </motion.div>
-
+</div>
 
 
 </div>

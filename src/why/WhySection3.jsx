@@ -272,7 +272,7 @@ function WhySection3(){
   
 ];
     return(
-        <section className="pt-10 h-auto pb-10">
+        <section className="pt-10 h-auto pb-10 max-w-[1500px] mx-auto">
 <div>
     <h1 className="flex justify-center font-bold lg:text-[50px] text-[30px]">WHY CHOOSE US</h1>
 </div>
