@@ -140,7 +140,7 @@ return(
   
 
 >
-<div className="pt-10 max-w-[1400px] xl:px-80">
+<div className="pt-10 max-w-[1400px]  lg:px-[20px] xl:px-[80px]" >
 
 
 <motion.div className="flex items-center gap-3 border border-gray-100 w-[200px] lg:py-[5px]  justify-center rounded-3xl font-semibold "
