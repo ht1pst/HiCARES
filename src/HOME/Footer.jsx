@@ -7,24 +7,7 @@ function Footer(){
 
 >
 
-    <div className="flex flex-col lg:flex-row justify-between items-center max-w-[1550px] mx-auto">
-<h1 className="lg:text-[50px] text-[32px] leading-tight font-semibold text-black flex justify-center"> Subscribe for daily update</h1>
-  <div className="flex items-center relaive">
-
-   <div className="relative mt-5 lg:mt-0 flex">
-    <img src={email} alt="" className="absolute  top-[22px] left-5 hidden" />
-  <input
-    type="text"
-    placeholder="Email address"
-    className="lg:w-80 w-70 h-15 bg-[#F8FAFC] border-black border  text-black px-5   pr-4 py-2 outline-none rounded-l-md"
-  />
-  <div className="w-15 bg-[#1E3A5F] rounded-r-md flex items-center h-15 justify-center">
-   <i className="fa-solid fa-paper-plane  text-white "></i>
-   </div>
-  </div>
   
-   </div>
-</div>
     <div className="flex lg:flex-row flex-col  gap-10 lg:justify-between mt-10 max-w-[1550px] mx-auto">
 
 <div>

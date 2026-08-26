@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 function HowItWorks(){
+   const navigate = useNavigate();
+
     return(
 
         <section className="py-10 px-[20px]">
@@ -192,6 +195,7 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
     rotate: [0, -4, 4, -4, 4, 0],
   }}
   style={{ transformOrigin: "center center" }}
+  onClick={() => navigate("/contact")}
     >Request Care</motion.button>
 
 
@@ -208,7 +212,7 @@ initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
     rotate: [0, -4, 4, -4, 4, 0],
   }}
   style={{ transformOrigin: "center center" }}
-
+  onClick={() => navigate("/referral")}
     >Refer a Client</motion.button>
 </div>
 

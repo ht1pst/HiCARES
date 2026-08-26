@@ -1,7 +1,10 @@
 import img from "../assets/ctaimg.webp";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 function CTA2(){
+   const navigate = useNavigate();
+
     return(
         <section
             className="relative lg:hidden block lg:py-20 py-10 bg-cover bg-center bg-no-repeat px-[20px]"
@@ -76,12 +79,16 @@ function CTA2(){
             ease: "easeInOut",
           },
         }}
-        style={{ transformOrigin: "center center" }}
+         style={{ transformOrigin: "center center" }}
+  onClick={() => navigate("/contact")}
                   >
                     Request Care
                   </motion.button>
       
-                  <button className="border lg:block hidden border-white text-white w-[180px] h-[45px] rounded-full font-bold hover:bg-white hover:text-[#1E3A5F] transition">
+                  <button className="border lg:block hidden border-white text-white w-[180px] h-[45px] rounded-full font-bold hover:bg-white hover:text-[#1E3A5F] transition"
+                   style={{ transformOrigin: "center center" }}
+  onClick={() => navigate("/contact")}
+                  >
                     Contact
                   </button>
                 </div>

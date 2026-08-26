@@ -1,7 +1,11 @@
 import img from "../assets/ctaimg.webp";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+
 function CTA(){
+   const navigate = useNavigate();
+
     return(
         <section className="hidden lg:block">
         
@@ -45,6 +49,7 @@ function CTA(){
             },
           }}
           style={{ transformOrigin: "center center" }}
+          onClick={() => navigate("/contact")}
          >Request Care</motion.button>
         
         
@@ -67,7 +72,8 @@ function CTA(){
               ease: "easeInOut",
             },
           }}
-          style={{ transformOrigin: "center center" }}
+           style={{ transformOrigin: "center center" }}
+  onClick={() => navigate("/contact")}
          >Contact</motion.button>
         </div>
         
