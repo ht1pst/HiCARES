@@ -188,7 +188,7 @@ function Section3(){
 </div>
          
          <h1 className="text-[24px] font-bold mt-5">Medicine Assistance</h1>
-         <p className="text-[16px] leading-[28px] mt-5">Our trained caregivers provide safe medication support according to each client's care plan, helping ensure medications are taken correctly and on schedule.</p>
+         <p className="text-[16px] leading-[28px] mt-5">Our trained caregivers provide safe medication support according to individualized care plans and schedules.</p>
 
 <div className="mt-8">
          <a href="#" className="underline">Read More</a>

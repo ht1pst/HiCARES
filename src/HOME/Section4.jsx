@@ -86,9 +86,9 @@ function Section4(){
 </div>
 
 
-<div className="flex flex-col lg:flex-row justify-center gap-5 mt-20 max-w-[1550px] mx-auto">
+<div className="flex flex-col lg:flex-row justify-center gap-5 lg:gap-6 mt-20 max-w-[1550px] mx-auto">
 
-<motion.div className="flex flex-col px-[20px] rounded-xl py-[30px] justify-center bg-[#DFF7F2] lg:w-[320px] mx-auto"
+<motion.div className="flex flex-col px-[20px] rounded-xl py-[30px] justify-center bg-[#DFF7F2] lg:w-[320px] mx-auto lg:mx-0"
  initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
   viewport={{ once: true, amount: 0.3 }} // animate only the first time
@@ -105,7 +105,7 @@ function Section4(){
 </motion.div>
 
 
-<motion.div className="flex flex-col px-[20px] rounded-xl py-[30px] justify-center bg-[#FFF4D6] lg:w-[320px] mx-auto"
+<motion.div className="flex flex-col px-[20px] rounded-xl py-[30px] justify-center bg-[#FFF4D6] lg:w-[320px] mx-auto lg:mx-0"
  initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
   viewport={{ once: true, amount: 0.3 }} // animate only the first time
@@ -122,7 +122,7 @@ function Section4(){
 </motion.div>
 
 
-<motion.div className="flex flex-col px-[20px] rounded-xl py-[30px] justify-center bg-[#FFE8DE] lg:w-[320px] mx-auto"
+<motion.div className="flex flex-col px-[20px] rounded-xl py-[30px] justify-center bg-[#FFE8DE] lg:w-[320px] mx-auto lg:mx-0"
  initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
   viewport={{ once: true, amount: 0.3 }} // animate only the first time
@@ -139,7 +139,7 @@ function Section4(){
 </motion.div>
 
 
-<motion.div className="flex flex-col px-[20px] rounded-xl py-[30px] justify-center bg-[#F2E8FF] lg:w-[320px] mx-auto"
+<motion.div className="flex flex-col px-[20px] rounded-xl py-[30px] justify-center bg-[#F2E8FF] lg:w-[320px] mx-auto lg:mx-0"
  initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
   viewport={{ once: true, amount: 0.3 }} // animate only the first time
