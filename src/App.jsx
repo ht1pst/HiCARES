@@ -1,5 +1,11 @@
+
 import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import Lenis from "lenis";
 
 import ScrollToTop from "./ScrollToTop";
@@ -27,7 +33,6 @@ import ServicesSection2 from "./Services/ServicesSection2";
 import ServicesSection3 from "./Services/ServicesSection3";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-
 import ServicesDeetsHero from "./personalizedcare/ServicesDeetsHero";
 import ServicesOverview from "./personalizedcare/ServicesOverview";
 import WhyChooseHiCARES from "./personalizedcare/WhyChooseHiCARES";
@@ -36,14 +41,12 @@ import CTA from "./personalizedcare/CTA";
 import CTA2 from "./personalizedcare/CTA2";
 import FAQ from "./personalizedcare/FAQ";
 
-
 import SkilledHero from "./skillednursing/SkilledHero";
 import SkilledSection2 from "./skillednursing/SkilledSection2";
 import SkilledSection3 from "./skillednursing/SkilledSection3";
 import SkilledSection4 from "./skillednursing/SkilledSection4";
 import SkilledSection44 from "./skillednursing/SkilledSection44";
 import FAQ2 from "./skillednursing/FAQ2";
-
 
 import MedicineAssistHero from "./medicineassist/MedicineAssistHero";
 import MedicineAssistSection2 from "./medicineassist/MedicineAssistSection2";
@@ -52,21 +55,17 @@ import MedicineAssistSection4 from "./medicineassist/MedicineAssistSection4";
 import MedicineAssistSection5 from "./medicineassist/MedicineAssistSection5";
 import FAQ3 from "./medicineassist/FAQ3";
 
-
 import HomeHealthHero from "./homehealth/HomeHealthHero";
 import HomeHealthsection2 from "./homehealth/HomeHealthsection2";
 import FAQ4 from "./homehealth/FAQ4";
-
 
 import CompanionCareHero from "./companioncare/CompanionCareHero";
 import CompanionCareSection2 from "./companioncare/CompanionCareSection2";
 import FAQ5 from "./companioncare/FAQ5";
 
-
 import HomeMakerHero from "./homemaker/HomeMakerHero";
 import HomeMakerSection2 from "./homemaker/HomeMakerSection2";
 import FAQ6 from "./homemaker/FAQ6";
-
 
 import RespiteCareHero from "./respitecare/RespiteCareHero";
 import RespiteCareSection2 from "./respitecare/RespiteCareSection2";
@@ -91,20 +90,125 @@ import ReferralSection4 from "./referral/ReferralSection4";
 import ReferralSection5 from "./referral/ReferralSection5";
 import ReferralSection6 from "./referral/ReferralSection6";
 
-
 import CareersHero from "./careers/CareersHero";
 import CareersSection2 from "./careers/CareersSection2";
 import CareersSection3 from "./careers/CareersSection3";
 import CareersSection4 from "./careers/CareersSection4";
 import CareersSection5 from "./careers/CareersSection5";
 
-
 import ContactHero from "./contact/ContactHero";
 import ContactSection2 from "./contact/ContactSection2";
 import ContactSection3 from "./contact/ContactSection3";
+
 function AppContent() {
   const location = useLocation();
   const [loading, setLoading] = useState(true);
+
+  // SEO: Update title and meta description for each page
+  useEffect(() => {
+    const seoData = {
+      "/": {
+        title: "HiCARES | Home Care & Nursing Services",
+        description:
+          "Discover personalized home care, nursing support, medication assistance, and respite care from HiCARES.",
+      },
+      "/about": {
+        title: "About HiCARES | Our Care Approach",
+        description:
+          "Learn about HiCARES and our commitment to personalized care and supporting individuals and families.",
+      },
+      "/services": {
+        title: "Home Care Services | HiCARES",
+        description:
+          "Explore HiCARES services, including personalized care, skilled nursing, medication support, respite care, and more.",
+      },
+      "/personalizedcare": {
+        title: "Personalized Care Services | HiCARES",
+        description:
+          "Explore personalized care services from HiCARES, tailored to individual needs and care plans.",
+      },
+      "/skillednursing": {
+        title: "Skilled Nursing Services | HiCARES",
+        description:
+          "Learn about professional nursing care provided according to physician orders and individualized care plans.",
+      },
+      "/medicineassist": {
+        title: "Medication Assistance | HiCARES",
+        description:
+          "Learn about medication support from HiCARES, helping clients follow their individualized care plans.",
+      },
+      "/homehealth": {
+        title: "Home Health Services | HiCARES",
+        description:
+          "Explore HiCARES home health services and personalized support for individuals in their homes.",
+      },
+      "/companioncare": {
+        title: "Companion Care Services | HiCARES",
+        description:
+          "Discover companion care services from HiCARES, providing social interaction and everyday support.",
+      },
+      "/homemaker": {
+        title: "Homemaker Services | HiCARES",
+        description:
+          "Learn about HiCARES homemaker services and assistance with everyday household needs.",
+      },
+      "/respitecare": {
+        title: "Respite Care Services | HiCARES",
+        description:
+          "Explore respite care services from HiCARES that support family caregivers and their loved ones.",
+      },
+      "/transport": {
+        title: "Transportation Services | HiCARES",
+        description:
+          "Learn about transportation support available through HiCARES for clients who need assistance getting around.",
+      },
+      "/carecoordination": {
+        title: "Care Coordination Services | HiCARES",
+        description:
+          "Discover HiCARES care coordination services designed to support organized, individualized care.",
+      },
+      "/why": {
+        title: "Why Choose HiCARES | Our Approach to Care",
+        description:
+          "Discover the HiCARES approach to personalized care and learn what matters when choosing a care provider.",
+      },
+      "/referral": {
+        title: "Refer a Client | HiCARES",
+        description:
+          "Refer someone to HiCARES and learn how to connect individuals and families with appropriate care services.",
+      },
+      "/careers": {
+        title: "Careers in Home Care | HiCARES",
+        description:
+          "Explore career opportunities with HiCARES and learn how to apply to join the care team.",
+      },
+      "/contact": {
+        title: "Contact HiCARES | Get in Touch",
+        description:
+          "Contact HiCARES to ask questions about our services or discuss care needs.",
+      },
+    };
+
+    const currentSEO = seoData[location.pathname] || {
+      title: "HiCARES | Home Care Services",
+      description:
+        "Learn more about HiCARES and our home care and nursing support services.",
+    };
+
+    document.title = currentSEO.title;
+
+    let metaDescription = document.querySelector(
+      'meta[name="description"]'
+    );
+
+    if (!metaDescription) {
+      metaDescription = document.createElement("meta");
+      metaDescription.setAttribute("name", "description");
+      document.head.appendChild(metaDescription);
+    }
+
+    metaDescription.setAttribute("content", currentSEO.description);
+  }, [location.pathname]);
 
   // Lenis
   useEffect(() => {
@@ -118,9 +222,12 @@ function AppContent() {
       requestAnimationFrame(raf);
     }
 
-    requestAnimationFrame(raf);
+    const rafId = requestAnimationFrame(raf);
 
-    return () => lenis.destroy();
+    return () => {
+      cancelAnimationFrame(rafId);
+      lenis.destroy();
+    };
   }, []);
 
   // Splash screen on every page change
@@ -178,228 +285,217 @@ function AppContent() {
             }
           />
 
-
-           <Route
+          <Route
             path="/services"
             element={
               <>
-                <ServicesHero/>
-                <ServicesSection2/>
-                <ServicesSection3/>
+                <ServicesHero />
+                <ServicesSection2 />
+                <ServicesSection3 />
                 <Section7 />
                 <Footer />
               </>
             }
           />
 
- <Route
+          <Route
             path="/personalizedcare"
             element={
               <>
-                <ServicesDeetsHero/>
-              <ServicesOverview/>
-               <WhyChooseHiCARES/>
-               <HowItWorks/>
-               <CTA/>
-               <CTA2/>
-               <FAQ/>
-               <Footer />
+                <ServicesDeetsHero />
+                <ServicesOverview />
+                <WhyChooseHiCARES />
+                <HowItWorks />
+                <CTA />
+                <CTA2 />
+                <FAQ />
+                <Footer />
               </>
             }
           />
-
 
           <Route
             path="/skillednursing"
             element={
               <>
-              <SkilledHero/>
-              <SkilledSection2/>
-               <WhyChooseHiCARES/>
-               <HowItWorks/>
-               <CTA/>
-               <CTA2/>
-               <FAQ2/>
-               <Footer />
+                <SkilledHero />
+                <SkilledSection2 />
+                <WhyChooseHiCARES />
+                <HowItWorks />
+                <CTA />
+                <CTA2 />
+                <FAQ2 />
+                <Footer />
               </>
             }
           />
 
-          MedicineAssistHero
-
- <Route
+          <Route
             path="/medicineassist"
             element={
               <>
-              <MedicineAssistHero/>
-              <MedicineAssistSection2/>
-              <WhyChooseHiCARES/>
-               <HowItWorks/>
-               <CTA/>
-               <CTA2/>
-               <FAQ3/>
-               <Footer />
+                <MedicineAssistHero />
+                <MedicineAssistSection2 />
+                <WhyChooseHiCARES />
+                <HowItWorks />
+                <CTA />
+                <CTA2 />
+                <FAQ3 />
+                <Footer />
               </>
             }
           />
-          
 
           <Route
             path="/homehealth"
             element={
               <>
-              <HomeHealthHero/>
-              <HomeHealthsection2/>
-              <WhyChooseHiCARES/>
-               <HowItWorks/>
-               <CTA/>
-               <CTA2/>
-               <FAQ4/>
-               <Footer />
+                <HomeHealthHero />
+                <HomeHealthsection2 />
+                <WhyChooseHiCARES />
+                <HowItWorks />
+                <CTA />
+                <CTA2 />
+                <FAQ4 />
+                <Footer />
               </>
             }
           />
 
-
- <Route
+          <Route
             path="/companioncare"
             element={
               <>
-              <CompanionCareHero/>
-              <CompanionCareSection2/>
-              <WhyChooseHiCARES/>
-               <HowItWorks/>
-               <CTA/>
-               <CTA2/>
-               <FAQ5/>
-               <Footer />
+                <CompanionCareHero />
+                <CompanionCareSection2 />
+                <WhyChooseHiCARES />
+                <HowItWorks />
+                <CTA />
+                <CTA2 />
+                <FAQ5 />
+                <Footer />
               </>
             }
           />
-
 
           <Route
             path="/homemaker"
             element={
               <>
-              <HomeMakerHero/>
-            <HomeMakerSection2/>
-              <WhyChooseHiCARES/>
-               <HowItWorks/>
-               <CTA/>
-               <CTA2/>
-               <FAQ6/>
-               <Footer />
+                <HomeMakerHero />
+                <HomeMakerSection2 />
+                <WhyChooseHiCARES />
+                <HowItWorks />
+                <CTA />
+                <CTA2 />
+                <FAQ6 />
+                <Footer />
               </>
             }
           />
 
-
-           <Route
+          <Route
             path="/respitecare"
             element={
               <>
-              <RespiteCareHero/>
-            <RespiteCareSection2/>
-              <WhyChooseHiCARES/>
-               <HowItWorks/>
-               <CTA/>
-               <CTA2/>
-               <FAQ7/>
-               <Footer />
+                <RespiteCareHero />
+                <RespiteCareSection2 />
+                <WhyChooseHiCARES />
+                <HowItWorks />
+                <CTA />
+                <CTA2 />
+                <FAQ7 />
+                <Footer />
               </>
             }
           />
 
-           <Route
+          <Route
             path="/transport"
             element={
               <>
-              <TransportHero/>
-            <TransportSection2/>
-              <WhyChooseHiCARES/>
-               <HowItWorks/>
-               <CTA/>
-               <CTA2/>
-               <FAQ8/>
-               <Footer />
+                <TransportHero />
+                <TransportSection2 />
+                <WhyChooseHiCARES />
+                <HowItWorks />
+                <CTA />
+                <CTA2 />
+                <FAQ8 />
+                <Footer />
               </>
             }
           />
 
-            <Route
+          <Route
             path="/carecoordination"
             element={
               <>
-              <CareCoordinationHero/>
-            <CareCoordinationSection2/>
-              <WhyChooseHiCARES/>
-               <HowItWorks/>
-               <CTA/>
-               <CTA2/>
-               <FAQ9/>
-               <Footer />
+                <CareCoordinationHero />
+                <CareCoordinationSection2 />
+                <WhyChooseHiCARES />
+                <HowItWorks />
+                <CTA />
+                <CTA2 />
+                <FAQ9 />
+                <Footer />
               </>
             }
           />
 
-           <Route
+          <Route
             path="/why"
             element={
               <>
-              <WhyHero/>
-              <WhySection3/>
-               <CTA/>
-               <CTA2/>
-               <Footer />
+                <WhyHero />
+                <WhySection3 />
+                <CTA />
+                <CTA2 />
+                <Footer />
               </>
             }
           />
 
-           <Route
+          <Route
             path="/referral"
             element={
               <>
-             <ReferralHero/>
-              <ReferralSection2/>
-              <ReferralSection3/>
-              <ReferralSection4/>
-              <ReferralSection5/>
-              <ReferralSection6/>
-               <CTA/>
-               <CTA2/>
-               <Footer />
+                <ReferralHero />
+                <ReferralSection2 />
+                <ReferralSection3 />
+                <ReferralSection4 />
+                <ReferralSection5 />
+                <ReferralSection6 />
+                <CTA />
+                <CTA2 />
+                <Footer />
               </>
             }
           />
 
-           <Route
+          <Route
             path="/careers"
             element={
               <>
-            <CareersHero/>
-            <CareersSection2/>
-            <CareersSection3/>
-            <CareersSection4/>
-               <Footer />
+                <CareersHero />
+                <CareersSection2 />
+                <CareersSection3 />
+                <CareersSection4 />
+                <Footer />
               </>
             }
           />
 
-            <Route
+          <Route
             path="/contact"
             element={
               <>
-            <ContactHero/>
-             <ContactSection3/>
-            <ContactSection2/>
-            <Footer />
-            
+                <ContactHero />
+                <ContactSection3 />
+                <ContactSection2 />
+                <Footer />
               </>
             }
           />
-
-
         </Routes>
       </main>
     </>
