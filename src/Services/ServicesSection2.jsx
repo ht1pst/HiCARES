@@ -5,6 +5,36 @@ function ServicesSection2(){
     return(
 <section className="lg:px-[165px] px-[20px] h-auto pb-10 lg:pt-20 pt-5 max-w-[1700px] mx-auto">
 
+
+<div className="text-center max-w-[850px] mx-auto mb-12">
+  <h2 className="text-[30px] lg:text-[42px] font-bold text-[#1E3A5F]">
+    Explore Our Home Care Services
+  </h2>
+
+  <p className="text-[17px] text-gray-600 leading-8 mt-5">
+    At HiCARES, we understand that every individual has
+    unique care needs. Explore our personal care, skilled
+    nursing, medication assistance, companion care,
+    respite care, and other home support services
+    designed to help individuals and families.
+  </p>
+</div>
+
+
+<div className="text-center max-w-[850px] mx-auto mb-12">
+  <h2 className="text-[30px] lg:text-[42px] font-bold text-[#1E3A5F]">
+    Explore Our Care Services
+  </h2>
+
+  <p className="text-[17px] text-gray-600 leading-8 mt-5">
+    Every person's care needs are different. Explore our
+    range of personal care, nursing, home support, and
+    companionship services to learn how HiCARES can help
+    individuals and families find suitable care.
+  </p>
+</div>
+
+
 <div className="flex gap-5 justify-between flex-col lg:flex-row  mt-10">
 
 <Link to="/personalizedcare">
@@ -30,7 +60,7 @@ function ServicesSection2(){
   strokeLinecap="round"
   strokeLinejoin="round"
 >
-  <path d="M11 14s-1-1-4-1a4 4 0 0 0-4 4v1h10" />
+  <path d="M11 14s-1-1-4-1a4 4 0 0 0-4 4v1h30" />
   <path d="M18.5 8.5a2.5 2.5 0 0 0-3.5 0L14 9.5l-1-1a2.5 2.5 0 0 0-3.5 3.5l1 1L14 16.5l3.5-3.5 1-1a2.5 2.5 0 0 0 0-3.5z" />
 </svg>
 </div>
@@ -42,11 +72,15 @@ function ServicesSection2(){
 
 </div>
          
-         <h1 className="text-[24px] font-bold mt-5">Personal Care Assistance</h1>
+         <h3 className="text-[24px] font-bold mt-5">Personal Care Assistance</h3>
          <p className="text-[16px] leading-[28px] mt-5">We provide respectful, hands-on assistance with activities of daily living while promoting independence and preserving dignity.</p>
 
 <div className="mt-8">
-         <a href="#" className="underline">Read More</a>
+         
+<span className="underline">
+  Learn more about personal care
+</span>
+
          </div>
         </motion.div>
 </Link>
@@ -73,7 +107,7 @@ function ServicesSection2(){
   strokeLinejoin="round"
 >
   <path d="M12 5v14" />
-  <path d="M5 12h14" />
+  <path d="M5 12h34" />
 </svg>
 </div>
 
@@ -84,12 +118,16 @@ function ServicesSection2(){
 
 </div>
          
-         <h1 className="text-[24px] font-bold mt-5">Skilled Nursing Services</h1>
+         <h3 className="text-[24px] font-bold mt-5">Skilled Nursing Services</h3>
          <p className="text-[16px] leading-[28px] mt-5">Our licensed nurses provide professional nursing care according to physician orders and individualized care plans.
 </p>
 
 <div className="mt-8">
-         <a href="#" className="underline">Read More</a>
+         
+<span className="underline">
+  Learn more about Skilled nursing services
+</span>
+
          </div>
         </motion.div>
 </Link>
@@ -129,11 +167,15 @@ function ServicesSection2(){
 
 </div>
          
-         <h1 className="text-[24px] font-bold mt-5">Medicine Assistance</h1>
+         <h3 className="text-[24px] font-bold mt-5">Medicine Assistance</h3>
          <p className="text-[16px] leading-[28px] mt-5">Our trained caregivers provide safe medication support according to each client's care plan, helping ensure medications are taken correctly and on schedule.</p>
 
 <div className="mt-8">
-         <a href="#" className="underline">Read More</a>
+         
+<span className="underline">
+  Learn more about Medicine assistance
+</span>
+
 
          </div>
         </motion.div>
@@ -184,12 +226,16 @@ function ServicesSection2(){
 
 </div>
          
-         <h1 className="text-[24px] font-bold mt-5">Home Health Aide Services</h1>
+         <h3 className="text-[24px] font-bold mt-5">Home Health Aide Services</h3>
          <p className="text-[16px] leading-[28px] mt-5">Compassionate in-home support with daily routines, personal well-being, and health monitoring under professional supervision.
 </p>
 
 <div className="mt-8">
-         <a href="#" className="underline">Read More</a>
+        
+<span className="underline">
+  Learn more about Home health aid
+</span>
+
          </div>
         </motion.div>
 
@@ -229,12 +275,16 @@ function ServicesSection2(){
 
 </div>
          
-         <h1 className="text-[24px] font-bold mt-5">Companion Care</h1>
+         <h3 className="text-[24px] font-bold mt-5">Companion Care</h3>
          <p className="text-[16px] leading-[28px] mt-5">Providing meaningful companionship, conversation, and emotional support to help clients stay socially engaged and connected.
 </p>
 
 <div className="mt-8">
-         <a href="#" className="underline">Read More</a>
+         
+<span className="underline">
+  Learn more about Companion care
+</span>
+
          </div>
         </motion.div>
 </Link>
@@ -260,7 +310,7 @@ function ServicesSection2(){
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M3 10.5L12 3l9 7.5M5.25 9.75V21h13.5V9.75"
+      d="M3 10.5L12 3l9 7.5M5.25 9.75V21h33.5V9.75"
     />
     <path
       strokeLinecap="round"
@@ -277,12 +327,16 @@ function ServicesSection2(){
 
 </div>
          
-         <h1 className="text-[24px] font-bold mt-5">Homemaker Services</h1>
+         <h3 className="text-[24px] font-bold mt-5">Homemaker Services</h3>
          <p className="text-[16px] leading-[28px] mt-5">Helping maintain a clean, safe, and comfortable home through light housekeeping, laundry, meals, and organization.
 </p>
 
 <div className="mt-8">
-         <a href="#" className="underline">Read More</a>
+         
+<span className="underline">
+  Learn more about Home maker
+</span>
+
          </div>
         </motion.div>
 </Link>
@@ -330,11 +384,15 @@ function ServicesSection2(){
 
 </div>
          
-         <h1 className="text-[24px] font-bold mt-5">Respite Care</h1>
+         <h3 className="text-[24px] font-bold mt-5">Respite Care</h3>
          <p className="text-[16px] leading-[28px] mt-5">Giving family caregivers peace of mind with trusted temporary care while their loved ones remain safe and supported.</p>
 
 <div className="mt-8">
-         <a href="#" className="underline">Read More</a>
+        
+<span className="underline">
+ Learn more about Respite care
+</span>
+
          </div>
         </motion.div>
 </Link>
@@ -360,7 +418,7 @@ function ServicesSection2(){
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M7 16h10M5.5 16l1-6A2 2 0 018.5 8h7a2 2 0 012 2l1 6M7 16a1.5 1.5 0 11-3 0A1.5 1.5 0 017 16Zm13 0a1.5 1.5 0 11-3 0A1.5 1.5 0 0120 16ZM8.5 8l1-3h5l1 3"
+      d="M7 16h30M5.5 16l1-6A2 2 0 018.5 8h7a2 2 0 012 2l1 6M7 16a1.5 1.5 0 11-3 0A1.5 1.5 0 017 16Zm13 0a1.5 1.5 0 11-3 0A1.5 1.5 0 0120 16ZM8.5 8l1-3h5l1 3"
     />
   </svg>
 </div>
@@ -372,12 +430,16 @@ function ServicesSection2(){
 
 </div>
          
-         <h1 className="text-[24px] font-bold mt-5">Transportation & Errands</h1>
+         <h3 className="text-[24px] font-bold mt-5">Transportation & Errands</h3>
          <p className="text-[16px] leading-[28px] mt-5">Providing reliable transportation and assistance with appointments, shopping, pharmacy visits, and everyday errands.
 </p>
 
 <div className="mt-8">
-         <a href="#" className="underline">Read More</a>
+        
+<span className="underline">
+ Learn more about Transport & errands
+</span>
+
          </div>
         </motion.div>
 </Link>
@@ -419,12 +481,16 @@ function ServicesSection2(){
 
 </div>
          
-         <h1 className="text-[24px] font-bold mt-5">Care Coordination</h1>
+         <h3 className="text-[24px] font-bold mt-5">Care Coordination</h3>
          <p className="text-[16px] leading-[28px] mt-5">We collaborate with healthcare providers and families to create personalized care plans that evolve with each client's needs.
 </p>
 
 <div className="mt-8">
-         <a href="#" className="underline">Read More</a>
+        
+<span className="underline">
+Learn more about Care coordination
+</span>
+
          </div>
         </motion.div>
 </Link>

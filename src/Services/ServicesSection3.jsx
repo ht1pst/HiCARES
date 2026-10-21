@@ -30,12 +30,12 @@ function ServicesSection3(){
     <p className="text-gray-700 text-[13px]">Why Choose us</p>
 </motion.div>
 
-<motion.h1 className="lg:text-[48px] text-[30px] leading-[40px] lg:leading-[55px] font-bold lg:w-[600px] mt-5 lg:mt-5"
+<motion.h2 className="lg:text-[48px] text-[30px] leading-[40px] lg:leading-[55px] font-bold lg:w-[600px] mt-5 lg:mt-5"
  initial={{ opacity: 0, y: 40 }}       // starts slightly below and invisible
   whileInView={{ opacity: 1, y: 0 }}    // slides up into view
   viewport={{ once: true, amount: 0.3 }} // animate only the first time
   transition={{ duration: 0.8, ease: "easeOut" }}
->Delivering Compassionate and Quality Healthcare</motion.h1>
+>Delivering Compassionate and Quality Healthcare</motion.h2>
 
 <div className="flex flex-col lg:flex-row gap-6 mt-10">
 
@@ -50,8 +50,11 @@ function ServicesSection3(){
         <img src={clockk} alt="" className="w-10" />
     </div>
 
-<h1 className="text-[24px] font-bold  lg:mx-0 mt-4">Quick Response</h1>
-<p className="text-[17px] mx-auto lg:mx-0  mt-4 text-gray-600">Receive top-quality medical care advanced treatment</p>
+<h3 className="text-[24px] font-bold  lg:mx-0 mt-4">Quick Response</h3>
+<p className="text-[17px] mt-4 text-gray-600">
+  We aim to respond promptly to care enquiries and help
+  families understand their available care options.
+</p>
 
 </motion.div>
 
@@ -67,8 +70,11 @@ function ServicesSection3(){
         <img src={customer} alt="" className="w-10" />
     </div>
 
-<h1 className="text-[24px] font-bold  lg:mx-0 mt-4">Customer Focus</h1>
-<p className="text-[17px] mx-auto lg:mx-0  mt-4 text-gray-600">Patients first personalized and compassionate care</p>
+<h3 className="text-[24px] font-bold  lg:mx-0 mt-4">Customer Focus</h3>
+<p className="text-[17px] mt-4 text-gray-600">
+  We focus on personalized, respectful, and compassionate
+  support that considers each individual's needs.
+</p>
 
 </motion.div>
 </div>
